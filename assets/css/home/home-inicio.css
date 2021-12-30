@@ -18,7 +18,7 @@
 .titulo--inicio {
   color: var(--cor5);
   font-size: 1.5rem;
-  line-height: 2.25rem;
+  line-height: 1.5em;
   margin-top: 1rem;
 }
 
@@ -34,7 +34,7 @@
 
 .botao--inicioUm, .botao--inicioDois {
   color: var(--cor1);
-  font-size: 0.875rem;
+  font: 500 0.875rem "DM Sans", sans-serif;
   text-transform: uppercase;
 }
 

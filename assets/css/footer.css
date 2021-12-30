@@ -1,18 +1,70 @@
 .footer {
   background-color: var(--cor2);
-  
+  padding: 1.5rem 0;
 }
 
 .logo--footer, .logo--footer > span {
   color: var(--cor5);
   font-size: 1.5rem;
+  
 }
 
 .titulo--footer {
   color: var(--cor5);
+  font-size: 1.125rem;
+  margin-top: 1rem;
 }
 
 .texto--contato {
   color: var(--cor5);
   font-size: 0.75rem;
+}
+
+.contato__form {
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.form__email--input {
+  background-color: transparent;
+  border: 2px solid var(--cor5);
+  border-radius: 10px;
+  min-height: 50px;
+  outline: 0;
+  padding: 1em;
+  width: 100%;
+}
+
+.form__email--input::placeholder {
+  color: var(--cor5);
+  font: 400 0.625rem Poppins, sans-serif;
+  opacity: 1;
+}
+
+.form__botao--receber {
+  background-color: transparent;
+  border: none;
+  color: var(--cor5);
+  font: 700 0.625rem Poppins, sans-serif;
+  position: absolute;
+  right: 1rem;
+  top: 35%;
+  text-transform: uppercase;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 7.9rem;
+}
+
+.social__icones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+
+.icone__img {
+  width: 34px;
 }
