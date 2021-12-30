@@ -1,0 +1,23 @@
+.header {
+  background: var(--cor5);
+  height: 4.625rem;
+  position: fixed;
+  width: 100%;
+}
+
+.container--header {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--cor1);
+  font: 700 1.125rem Poppins, sans-serif;
+  text-transform: uppercase;
+}
+
+.logo > span {
+  color: var(--cor2);
+}

@@ -1,0 +1,40 @@
+.container--comoFunciona {
+  margin-top: 2rem;
+}
+
+.titulo--comoFunciona {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.5rem;
+}
+
+.produto--carteira {
+  margin-bottom: 2rem;
+}
+
+.titulo--produto, .texto--produto{
+  font: 700 1.125rem Poppins, sans-serif;
+  text-align: center;
+}
+
+.texto--produto {
+  font-weight: 500;
+}
+
+.botao--produto {
+  margin-top: 1.125rem;
+}
+
+.produto__img {
+  margin-bottom: 2rem;
+}
+.produto__img--financeiro {
+  width: 174px;
+}

@@ -1,0 +1,19 @@
+.botao {
+  align-items: center;
+  background-color: var(--cor2);
+  border-radius: 10px;
+  color: var(--cor5);
+  display: inline-flex;
+  font: 500 1rem "DM Sans", sans-serif;
+  justify-content: center;
+  padding: 1rem 2rem;
+  text-align: center;
+  width: 100%;
+  /* transition: all 0.4s ease-in-out; */
+}
+
+/* .botao:hover {
+  background-color: var(--cor-logo);
+  transform: translateY(-3px);
+} */
+
