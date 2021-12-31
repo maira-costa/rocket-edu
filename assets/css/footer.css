@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--cor2);
-  padding: 1.5rem 0;
+  background: linear-gradient(90deg,var(--cor2) 0%, #2b0060 100%);
+  padding: 1.5em 0;
 }
 
 .logo--footer, .logo--footer > span {
@@ -67,4 +67,47 @@
 
 .icone__img {
   width: 34px;
+}
+
+
+@media screen and (min-width:963px) {
+
+  .footer {
+    padding: 3em 0;
+  }
+
+  .container--footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo--footer, .logo--footer > span {
+    font-size: 3rem;
+  }
+
+  .contato {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 64%;
+  }
+
+  .titulo--footer {
+    font-size: 1.75rem;
+    margin-top: 0;
+  }
+  
+  .texto--contato {
+    font-size: 0.875rem;
+  }
+  
+  .social {
+    width: 12rem;
+  }
+  
+  .icone__img {
+    width: 53px;
+  }
+
 }

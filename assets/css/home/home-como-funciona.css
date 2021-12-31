@@ -41,3 +41,53 @@
 .produto__img--financeiro {
   width: 174px;
 }
+
+@media screen and (min-width:963px) {
+
+  .container--comoFunciona {
+    margin-top: 7rem;
+  }
+
+  .titulo--comoFunciona {
+    font-size: 4.375rem;
+    margin-bottom: 10rem;
+  }
+
+  .produto {
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    text-align: left;
+  }
+
+  .produto--financeiro, .produto--simulador {
+    flex-direction: row-reverse;
+  }
+
+  .produto--carteira {
+    margin-bottom: 8rem;
+  }
+
+  .titulo--produto{
+    font-size: 1.875rem;
+  }
+  
+  .texto--produto {
+    font-size: 1.625rem;
+  }
+  
+  .botao--produto {
+    width: auto;
+  }
+
+  .produto__img {
+    margin-bottom: 0rem;
+    width: 40%;
+  }
+
+  .produto__img--financeiro {
+    width: 289px;
+  }
+
+}
