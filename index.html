@@ -34,21 +34,46 @@
   <header class="header">
     <div class="container container--header">
       <a href="#" class="logo">rocket <span>edu</span></a>
-      <nav class="menu">
-        <ul class="menu__itens menu__itens--plataformas">
-          <li class="menu__item menu__item--plataformas"><a class="item__link item__link--plataformas"href="#">InvestPACK</a></li>
-          <li class="menu__item menu__item--plataformas"><a class="item__link item__link--plataformas"href="#">InvestVERSO</a></li>
-        </ul>
-        <ul class="menu__itens menu__itens--acesso">
-          <li class="menu__item menu__item--acesso">
-            <form class="menu__form" action="#">
-              <input type="search" class="search-data" placeholder="Pesquise por qualquer coisa" required>
-              <button type="submit" class="fas fa-search"></button>
-            </form>
-          </li>
-          <li class="menu__item menu__item--acesso"><a class="item__link" href="#">Entrar</a></li>
-          <li class="menu__item menu__item--acesso"><a class="botao botao--acesso" href="#">Cadastrar</a></li>
-        </ul>
+      <nav class="nav" id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span id="hamburger"></span>
+        </button>
+        <div class="menu" id="menu">
+          <ul class="menu__itens menu__itens--plataformas">
+            <li class="menu__item menu__item--plataformas">
+              <div class="menu__link">
+                <a class="item__link item__link--plataformas" href="#">InvestPACK</a>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="subMenu">
+                <li class="subMenu__item"><a class="subMenu__link" href="investpack-cursos.html">Cursos</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="">Material de Apoio</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="investpack-palestras.html">Palestras</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--plataformas">
+              <div class="menu__link">
+                <a class="item__link item__link--plataformas"href="#">InvestVERSO</a>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="subMenu">
+                <li class="subMenu__item"><a class="subMenu__link" href="">Jogos</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="">Notícias</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="">Simulador de Investimentos</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="menu__itens menu__itens--acesso">
+            <li class="menu__item menu__item--acesso">
+              <form class="menu__form" action="#">
+                <input type="search" class="search-data" placeholder="Pesquise por qualquer coisa" required>
+                <button type="submit" class="fas fa-search"></button>
+              </form>
+            </li>
+            <li class="menu__item menu__item--acesso"><a class="item__link" href="#">Entrar</a></li>
+            <li class="menu__item menu__item--acesso"><a class="botao botao--acesso" href="#">Cadastrar</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -67,6 +92,7 @@
             <a class="botao botao--inicioDois" href="#">Quero decolar com a rocket</a>
           </div>
         </div>
+        <img class="inicio__img" src="assets/img/home/chamada.png" alt="">
       </div>
     </section class="secao secao--comoFunciona">
       <div class="container container--comoFunciona">
@@ -105,33 +131,33 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container container--footer">
-        <a href="#" class="logo logo--footer">rocket <span>edu</span></a>
-        <div class="contato">
-          <div class="newsletter">
-            <h2 class="titulo titulo--footer">Conecte-se conosco!</h3>
-            <p class="texto texto--contato">Seja o primeiro a receber as últimas novidades
-              sobre Rocket Edu.</p>
-            <form class="contato__form" action="#" method="post" enctype="text/plain">
-              <input class="form__email--input" type="email" name="email" id="email" placeholder="Digite seu e-mail" required/>
-              <button class="form__botao--receber" type="submit">
-                Receber
-              </button>
-            </form>
-          </div>
-          <div class="social">
-            <h2 class="titulo titulo--footer">Redes Sociais</h2>
-            <div class="social__icones">
-              <a class="social__icone" href="https://www.instagram.com/" target="_blank"><img class="icone__img" src="assets/img/footer/instagram.svg" alt="instagram"></a>
-              <a class="social__icone" href="https://www.facebook.com/" target="_blank"><img class="icone__img" src="assets/img/footer/facebook.svg" alt="facebook"></a>
-              <a class="social__icone" href="https://www.youtube.com/" target="_blank"><img class="icone__img" src="assets/img/footer/youtube.svg" alt="youtube"></a>
-            </div>
+  </main>
+  <footer class="footer">
+    <div class="container container--footer">
+      <a href="#" class="logo logo--footer">rocket <span>edu</span></a>
+      <div class="contato">
+        <div class="newsletter">
+          <h2 class="titulo titulo--footer">Conecte-se conosco!</h3>
+          <p class="texto texto--contato">Seja o primeiro a receber as últimas novidades
+            sobre Rocket Edu.</p>
+          <form class="contato__form" action="#" method="post" enctype="text/plain">
+            <input class="form__email--input" type="email" name="email" id="email" placeholder="Digite seu e-mail" required/>
+            <button class="form__botao--receber" type="submit">
+              Receber
+            </button>
+          </form>
+        </div>
+        <div class="social">
+          <h2 class="titulo titulo--footer">Redes Sociais</h2>
+          <div class="social__icones">
+            <a class="social__icone" href="https://www.instagram.com/" target="_blank"><img class="icone__img" src="assets/img/footer/instagram.svg" alt="instagram"></a>
+            <a class="social__icone" href="https://www.facebook.com/" target="_blank"><img class="icone__img" src="assets/img/footer/facebook.svg" alt="facebook"></a>
+            <a class="social__icone" href="https://www.youtube.com/" target="_blank"><img class="icone__img" src="assets/img/footer/youtube.svg" alt="youtube"></a>
           </div>
         </div>
       </div>
-    </footer>
-  </main>
-
+    </div>
+  </footer>
+  <script src="assets/js/header.js"></script>
 </body>
 </html>
