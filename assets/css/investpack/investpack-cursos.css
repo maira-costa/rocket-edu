@@ -1,6 +1,6 @@
+
 .container--cursos {
   margin-top: 7rem;
-
 }
 
 .titulo--cursos {
@@ -19,7 +19,6 @@
   font: 700 1rem "DM Sans", sans-serif;
   margin-top: 1rem;
   padding-bottom: 0.56rem;
-
 }
 
 .curso {
@@ -50,7 +49,18 @@
 }
 
 .horas_curso {
-  font: 400 0.625rem "DM Sans", sans-serif ;
+  font: 400 0.82rem "DM Sans", sans-serif ;
+}
+
+.horasEavaliacao_curso{
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+.avaliacao{
+  width: 91px;
+  height: 21px;
 }
 
 .valor_curso {
@@ -79,5 +89,26 @@
   background: transparent;
 }  
 
+
+
+@media screen and (min-width:963px){
+
+  .horasEavaliacao_curso {    
+    gap: 3rem;    
+  }
+
+  .infoEvalor__curso{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .valor_curso--desktop{  
+   font-size: 1.5rem; 
+   vertical-align: top;
+  }
+  
+
+
+}
 
 
