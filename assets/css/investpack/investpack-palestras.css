@@ -1,70 +1,55 @@
 
-.container--cursos {
+.container--palestras{
   margin-top: 7rem;
 }
 
-.titulo--cursos {
+.titulo--palestras {
   font: 700 1.125rem "DM Sans", sans-serif;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #ECE9E9 ;
+  border-bottom: 1px solid #ECE9E9;
 }
 
-.subtitulo--todosCursos{
+.subtitulo--todosPalestras{
   font: 700 1.125rem "DM Sans", sans-serif;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #ECE9E9 ;
+  border-bottom: 1px solid #ECE9E9;
 }
 
-.subtitulo--cursosPopulares {
+.subtitulo--palestrasPopulares {
   font: 700 1rem "DM Sans", sans-serif;
   margin-top: 1rem;
   padding-bottom: 0.56rem;
 }
 
-.curso {
-  width: 11.25rem;
-  height: 11.68rem;
+.palestra--populares {
+  width: 18rem;
+  height: 12rem;
   margin-bottom: 1.6875rem;
 }
-.curso--todos{
-  display: flex;
-  gap: 2rem;   
+
+.palestra--todos{    
+    
   margin-top: 1.5rem;
   justify-content: space-between;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #ECE9E9 ;
 }
 
-.capa__curso--todos{
-  width: 30%;
-  height: auto;
+.video__palestra--populares{
+  width: 18rem;
+  height: 9rem;
 }
 
-.texto_curso{
+.video__palestra{
   width: 100%;
-} 
-
-.nome_do_curso {
+  height: 205px;
+}
+.nome_da_palestra {
   font: 700 1rem "DM Sans", sans-serif;
 }
 
-.horas_curso {
+.palestrante {
   font: 400 0.82rem "DM Sans", sans-serif ;
-}
-
-.horasEavaliacao_curso{
-  display: flex;
-  
-  justify-content: space-between;
-}
-
-.avaliacao{
-  width: 91px;
-  height: 21px;
-}
-
-.valor_curso {
-  font: 700 0.75rem "DM Sans", sans-serif ;
 }
 
 /*SLIDER*/
@@ -93,20 +78,26 @@
 
 @media screen and (min-width:963px){
 
-  .horasEavaliacao_curso {    
-    gap: 3rem;    
-  }
-
-  .infoEvalor__curso{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .valor_curso--desktop{  
-   font-size: 1.5rem; 
-   vertical-align: top;
+  .palestra--todos{  
+    display: flex; 
+    gap: 2rem;
+    justify-content: left;     
   }
   
+  .video__palestra{
+    width: 50%;
+    height: 250px;
+    
+  }
+  .texto__palestra--todos{
+    width: 40%;
+  }
+  .nome_da_palestra--todos {
+    font-size: 1.25rem;
+  }
+  .palestrante--todos{
+    font-size: 0.95rem;
+  }
 
 
 }
