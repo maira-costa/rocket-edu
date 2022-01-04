@@ -1,0 +1,83 @@
+.container--cursos {
+  margin-top: 7rem;
+
+}
+
+.titulo--cursos {
+  font: 700 1.125rem "DM Sans", sans-serif;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ECE9E9 ;
+}
+
+.subtitulo--todosCursos{
+  font: 700 1.125rem "DM Sans", sans-serif;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ECE9E9 ;
+}
+
+.subtitulo--cursosPopulares {
+  font: 700 1rem "DM Sans", sans-serif;
+  margin-top: 1rem;
+  padding-bottom: 0.56rem;
+
+}
+
+.curso {
+  width: 11.25rem;
+  height: 11.68rem;
+  margin-bottom: 1.6875rem;
+}
+.curso--todos{
+  display: flex;
+  gap: 2rem;   
+  margin-top: 1.5rem;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ECE9E9 ;
+}
+
+.capa__curso--todos{
+  width: 30%;
+  height: auto;
+}
+
+.texto_curso{
+  width: 100%;
+} 
+
+.nome_do_curso {
+  font: 700 1rem "DM Sans", sans-serif;
+}
+
+.horas_curso {
+  font: 400 0.625rem "DM Sans", sans-serif ;
+}
+
+.valor_curso {
+  font: 700 0.75rem "DM Sans", sans-serif ;
+}
+
+/*SLIDER*/
+#items-wrapper{
+  width: 100%;  
+}
+
+#items {
+  display: flex;
+  overflow-x:auto;
+  gap: 1rem;
+  -webkit-overflow-scrolling: true;
+  scroll-behavior: smooth;  
+}
+
+.item{
+  flex: none;
+  pointer-events: none;  
+}
+
+#items::-webkit-scrollbar {
+  background: transparent;
+}  
+
+
+
