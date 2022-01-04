@@ -1,0 +1,105 @@
+
+.container--palestras{
+  margin-top: 7rem;
+}
+
+.titulo--palestras {
+  font: 700 1.125rem "DM Sans", sans-serif;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ECE9E9;
+}
+
+.subtitulo--todosPalestras{
+  font: 700 1.125rem "DM Sans", sans-serif;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ECE9E9;
+}
+
+.subtitulo--palestrasPopulares {
+  font: 700 1rem "DM Sans", sans-serif;
+  margin-top: 1rem;
+  padding-bottom: 0.56rem;
+}
+
+.palestra--populares {
+  width: 18rem;
+  height: 12rem;
+  margin-bottom: 1.6875rem;
+}
+
+.palestra--todos{    
+    
+  margin-top: 1.5rem;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ECE9E9 ;
+}
+
+.video__palestra--populares{
+  width: 18rem;
+  height: 9rem;
+}
+
+.video__palestra{
+  width: 100%;
+  height: 205px;
+}
+.nome_da_palestra {
+  font: 700 1rem "DM Sans", sans-serif;
+}
+
+.palestrante {
+  font: 400 0.82rem "DM Sans", sans-serif ;
+}
+
+/*SLIDER*/
+#items-wrapper{
+  width: 100%;  
+}
+
+#items {
+  display: flex;
+  overflow-x:auto;
+  gap: 1rem;
+  -webkit-overflow-scrolling: true;
+  scroll-behavior: smooth;  
+}
+
+.item{
+  flex: none;
+  pointer-events: none;  
+}
+
+#items::-webkit-scrollbar {
+  background: transparent;
+}  
+
+
+
+@media screen and (min-width:963px){
+
+  .palestra--todos{  
+    display: flex; 
+    gap: 2rem;
+    justify-content: left;     
+  }
+  
+  .video__palestra{
+    width: 50%;
+    height: 250px;
+    
+  }
+  .texto__palestra--todos{
+    width: 40%;
+  }
+  .nome_da_palestra--todos {
+    font-size: 1.25rem;
+  }
+  .palestrante--todos{
+    font-size: 0.95rem;
+  }
+
+
+}
+
+
