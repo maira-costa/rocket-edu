@@ -1,0 +1,21 @@
+/*SLIDER*/
+#items-wrapper{
+  width: 100%;  
+}
+
+#items {
+  display: flex;
+  overflow-x:auto;
+  gap: 1rem;
+  -webkit-overflow-scrolling: true;
+  scroll-behavior: smooth;  
+}
+
+.item{
+  flex: none;
+  pointer-events: none;  
+}
+
+#items::-webkit-scrollbar {
+  background: transparent;
+}  
