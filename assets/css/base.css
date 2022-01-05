@@ -13,17 +13,17 @@ body {
 :root {
   
   /*cores*/
-  --cor1: #0F241D;
-  --cor2: #3D0071;
-  --cor3: #7AFDF5;
-  --cor4: #F9F9F9;
-  --cor5: #FFFFFF;
-
+  --cor-verde-escuro: #0F241D;
+  --cor-roxa: #3D0071;
+  --cor-verde-teal: #7AFDF5;
+  --cor-branca: #FFFFFF;
+  --cor-cinza: #313131;
+  --cor-cinza-claro: #ededed;
 }
 
 .titulo {
   font: 700 1.5rem Popins, sans-serif;
-  color: var(--cor2);
+  color: var(--cor-roxa);
 }
 
 .texto {
@@ -31,9 +31,15 @@ body {
   color: #000;
 }
 
+.texto-pequeno {
+  font: 400 0.9rem "DM Sans", sans-serif;
+  color: var(--cor-branca);
+  text-align: center;
+  padding: 1rem 0;
+}
 
-@media screen and (min-width:768px) {
-  
+.texto-extra-pequeno {
+  font: 200 0.7rem "DM Sans", sans-serif !important;
 }
 
 @media screen and (min-width:963px) {

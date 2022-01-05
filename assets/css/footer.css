@@ -4,19 +4,19 @@
 }
 
 .logo--footer, .logo--footer > span {
-  color: var(--cor5);
+  color: var(--cor-branca);
   font-size: 1.5rem;
   
 }
 
 .titulo--footer {
-  color: var(--cor5);
+  color: var(--cor-branca);
   font-size: 1.125rem;
   margin-top: 1rem;
 }
 
 .texto--contato {
-  color: var(--cor5);
+  color: var(--cor-branca);
   font-size: 0.75rem;
 }
 
@@ -27,9 +27,9 @@
 
 .form__email--input {
   background-color: transparent;
-  border: 2px solid var(--cor5);
+  border: 2px solid var(--cor-branca);
   border-radius: 10px;
-  color: var(--cor5);
+  color: var(--cor-branca);
   min-height: 50px;
   outline: 0;
   padding: 1em;
@@ -37,7 +37,7 @@
 }
 
 .form__email--input::placeholder {
-  color: var(--cor5);
+  color: var(--cor-branca);
   font: 400 0.625rem Poppins, sans-serif;
   opacity: 1;
 }
@@ -45,7 +45,7 @@
 .form__botao--receber {
   background-color: transparent;
   border: none;
-  color: var(--cor5);
+  color: var(--cor-branca);
   font: 700 0.625rem Poppins, sans-serif;
   position: absolute;
   right: 1rem;

@@ -24,35 +24,35 @@
 }
 
 .titulo--inicio {
-  color: var(--cor5);
+  color: var(--cor-branca);
   font-size: 1.5rem;
   line-height: 1.5em;
 }
 
 .texto--inicio {
-  color: var(--cor5);
+  color: var(--cor-branca);
   font: 400 0.875rem "DM Sans", sans-serif;;
   margin-top: 0.25rem;
 }
 
 .texto--inicio > span {
-  color: var(--cor3);
+  color: var(--cor-verde-teal);
 }
 
 .botao--inicioUm, .botao--inicioDois {
-  color: var(--cor1);
+  color: var(--cor-verde-escuro);
   display: block;
   font: 500 0.875rem "DM Sans", sans-serif;
   text-transform: uppercase;
 }
 
 .botao--inicioUm {
-  background: var(--cor5);
+  background: var(--cor-branca);
   margin-top: 1.5625rem;
 }
 
 .botao--inicioDois {
-  background-color: var(--cor3);
+  background-color: var(--cor-verde-teal);
   margin-top: 1rem;
 }
 

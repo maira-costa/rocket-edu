@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENTRAR NO ROCKET EDU</title>
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/container.css">
+  <link rel="stylesheet" href="assets/css/pular-navegacao.css">
+
+  <link rel="stylesheet" href="assets/css/header.css">
+
+  <link rel="stylesheet" href="assets/css/login.css">
+
+  <link rel="stylesheet" href="assets/css/home/botao.css">
+  <link rel="stylesheet" href="assets/css/home/home-inicio.css">
+
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,200&display=swap"
+    rel="stylesheet">
+
+  <!--Ícones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container--header">
+      <a href="#" class="logo">rocket <span>edu</span></a>
+      <nav class="nav" id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span id="hamburger"></span>
+        </button>
+        <div class="menu" id="menu">
+          <ul class="menu__itens menu__itens--plataformas">
+            <li class="menu__item menu__item--plataformas">
+              <div class="menu__link">
+                <a class="item__link item__link--plataformas" href="#">InvestPACK</a>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="subMenu">
+                <li class="subMenu__item"><a class="subMenu__link" href="investpack-cursos.html">Cursos</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="">Material de Apoio</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="investpack-palestras.html">Palestras</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--plataformas">
+              <div class="menu__link">
+                <a class="item__link item__link--plataformas" href="#">InvestVERSO</a>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="subMenu">
+                <li class="subMenu__item"><a class="subMenu__link" href="">Jogos</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="">Notícias</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="">Simulador de Investimentos</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="menu__itens menu__itens--acesso">
+            <li class="menu__item menu__item--acesso">
+              <form class="menu__form" action="#">
+                <input type="search" class="search-data" placeholder="Pesquise por qualquer coisa" required>
+                <button type="submit" class="fas fa-search"></button>
+              </form>
+            </li>
+            <li class="menu__item menu__item--acesso"><a class="item__link" href="#">Entrar</a></li>
+            <li class="menu__item menu__item--acesso"><a class="botao botao--acesso" href="#">Cadastrar</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao secao--inicio" id="inicio">
+      <div class="container container--inicio">
+        <div class="inicio__conteudo">
+          <p class="texto-pequeno"><b>Inscreva-se e comece a aprender!</b></p>
+          <hr> 
+          <form>
+            <input class="caixa-de-texto" type="text" id="nome" name="name" placeholder="Nome Completo">
+            <input class="caixa-de-texto" type="text" id="email" name="email" placeholder="E-mail">
+            <input class="caixa-de-texto" type="password" id="senha" name="password" placeholder="Senha">
+            <!-- TO DO: alinhar icone fechadura com o fim da caixa de texto da senha -->
+            <!-- <i class="fas fa-lock icone"></i> -->
+          </form>
+          <a class="botao botao--enviar" href="#">Cadastrar</a>
+          <br>
+          <a href="#">
+            <p class="texto-extra-pequeno texto-pequeno">
+              Ao inscrever-se, você concorda com nossos <b>Termos de uso</b> <br/>
+              e nossa <b>Política de privacidade</b>.
+            </p>
+          </a>
+          <br>
+          <a href="#">
+            <p class="texto-pequeno">Já faz parte? <b>Entrar</b></p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="assets/js/header.js"></script>
+</body>
+
+</html>

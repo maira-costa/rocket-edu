@@ -1,9 +1,9 @@
 .botao {
   align-items: center;
-  background-color: var(--cor2);
+  background-color: var(--cor-roxa);
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: var(--cor5);
+  color: var(--cor-branca);
   display: inline-flex;
   font: 500 1rem "DM Sans", sans-serif;
   justify-content: center;
@@ -13,8 +13,31 @@
   transition: all 0.4s ease-in-out;
 }
 
+.botao--enviar {
+  color: var(--cor-verde-escuro);
+  background-color: var(--cor-verde-teal);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font: 500 0.875rem "DM Sans", sans-serif;
+}
+
+@media screen and (min-width:963px) {
+  .botao--enviar {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 18rem;
+  }
+}
+
+/* .botao:hover {
+  background-color: var(--cor-logo);
 .botao:hover {
-  /* background-color: var(--cor3); */
+  /* background-color: var(--cor3);
+  >>>>>>> main
   transform: translateY(-3px);
 }
+*/
+
 
