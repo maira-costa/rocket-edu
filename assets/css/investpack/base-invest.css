@@ -8,38 +8,39 @@
   border-bottom: 1px solid #ECE9E9;
 }
 
+.subtitulo__invest--populares {
+  font: 700 1rem "DM Sans", sans-serif;
+  margin-top: 1rem;
+  padding-bottom: 0.56rem;
+}
 .subtitulo__invest--todos{
   font: 700 1.125rem "DM Sans", sans-serif;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ECE9E9;
 }
 
-.subtitulo__invest--populares {
-  font: 700 1rem "DM Sans", sans-serif;
-  margin-top: 1rem;
-  padding-bottom: 0.56rem;
-}
-
 .conteudo__invest--populares {
   width: 15rem;
-  height: 14rem;
+  height: 16rem;
   margin-bottom: 1.6875rem;
 }
 
-.conteudo__invest--todos{ 
-  display: flex;  
-  margin-top: 1.5rem;
-  justify-content: space-between;
+.conteudo__invest--todos{     
+  margin-top: 1.5rem;  
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #ECE9E9 ;
 }
+
+
 
 @media screen and (min-width:963px){
 
   .conteudo__invest--todos{  
     display: flex; 
     gap: 2rem;
-    justify-content: left;     
+    justify-content: left;
+    
+      
   }
   
 }

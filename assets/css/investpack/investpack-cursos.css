@@ -1,6 +1,6 @@
 
 .capa__curso--todos{
-  width: 30%;
+  width: 100%;
   height: auto;
 }
 
@@ -49,7 +49,10 @@
    font-size: 1.5rem; 
    vertical-align: top;
   }
-  
+  .capa__curso--todos{
+    width: 50%;
+    height: auto;
+  }
 
 
 }
