@@ -17,7 +17,8 @@ body {
   --cor-roxa: #3D0071;
   --cor-verde-teal: #7AFDF5;
   --cor-branca: #FFFFFF;
-
+  --cor-cinza: #313131;
+  --cor-cinza-claro: #ededed;
 }
 
 .titulo {
@@ -30,10 +31,13 @@ body {
   color: #000;
 }
 
-
-@media screen and (min-width:768px) {
-  
+.texto-pequeno {
+  font: 400 0.9rem "DM Sans", sans-serif;
+  color: var(--cor-branca);
+  text-align: center;
+  padding: 1rem 0;
 }
+
 
 @media screen and (min-width:963px) {
   

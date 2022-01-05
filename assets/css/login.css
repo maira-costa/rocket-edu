@@ -1,0 +1,38 @@
+.caixa-de-texto {
+  width: 18rem;
+  padding: 12px;
+  margin: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  border: none;
+  background-color: var(--cor-cinza-claro);
+  color: var(--cor-cinza); 
+  display: block;
+}
+
+.butao-customizado {
+  color: var(--cor-verde-escuro) !important;
+  text-align: center;
+  font: 500 0.875rem "DM Sans", sans-serif;
+}
+
+hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--cor-branca);
+  margin-bottom: 2rem;
+  border-style: solid;
+}
+
+.icone {
+  color: var(--cor-cinza); 
+}
+
+form {
+  padding: 0px;
+  margin: 0px;
+}
+

@@ -16,8 +16,9 @@
 .botao--enviar {
   color: var(--cor-verde-escuro);
   background-color: var(--cor-verde-teal);
-  margin-top: 1rem;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   font: 500 0.875rem "DM Sans", sans-serif;
 }
 
