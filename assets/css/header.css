@@ -14,6 +14,7 @@
   justify-content: space-between;
 }
 
+/*---- LOGO ----*/
 .logo {
   color: var(--cor1);
   font: 700 1.125rem Poppins, sans-serif;
@@ -24,6 +25,7 @@
   color: var(--cor2);
 }
 
+/*---- MENU ----*/
 .menu {
   background-color: var(--cor5);
   position: absolute;
@@ -39,6 +41,8 @@
   overflow-y: hidden;
 }
 
+/* Menu mobile com referência no tutorial do vídeo localizado em https://www.youtube.com/watch?v=DnODupiIAiE */
+/*início do trecho do tutorial*/
 #nav.active #menu {
   height: calc(100vh - 4.625rem);;
   visibility: visible;
@@ -80,6 +84,7 @@
   transform: rotate(-135deg);
   top: -7px;
 }
+/*fim do trecho do tutorial*/
 
 .menu__itens {
   padding: 0 1.5rem;
@@ -128,6 +133,58 @@ color: #313131;
   display: initial;
 }
 
+.menuMobile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu__form {
+  margin-right: 1rem;
+}
+
+.form__busca {
+  position: relative;
+  /* width: 5rem; */
+}
+
+.form__busca > input {
+  visibility: hidden;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: 0;
+  /* padding: 1em 1em 1em 3.5em; */
+  padding: 0;
+  height: 45px;
+  width: 45px;
+  transition: all .5s ease-in-out;
+}
+
+.form__busca > button {
+  background-color: transparent;
+  border: none;
+  color: var(--cor2);
+  position: absolute;
+  right: 1rem;
+  top: 32%;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.menu__form:focus-within > .form__busca > input {
+  width: 8rem;
+  padding: 1em;
+  border-radius: 10px;
+  visibility: visible;
+}
+
+.menu__form:focus-within > .form__busca > button {
+  color: #313131;
+  opacity: 0.5;
+}
+
 .menu__item--acesso > .item__link {
   color: var(--cor2);
 }
@@ -148,8 +205,19 @@ color: #313131;
     height: 6.30rem;
   }
 
+  .container--header {
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  /*---- LOGO ----*/
   .logo {
     font-size: 1.875rem;
+  }
+
+  /*---- MENU ----*/
+  .nav {
+    position: relative;
   }
 
   .menu {
@@ -161,6 +229,9 @@ color: #313131;
     position: initial;
     visibility: visible;
     overflow: initial;
+
+
+    width: 55rem;
   }
 
   #btn-mobile {
@@ -172,35 +243,43 @@ color: #313131;
    align-items: center;
    justify-content: space-between;
    padding: 0;
- }
+  }
 
- .menu__itens--plataformas, .menu__itens--acesso {
+  .menu__itens--plataformas, .menu__itens--acesso {
   padding: 0;
+  }
+
+  .menu__itens--plataformas:first-child {
+    margin-left: 1.5rem;
   }
 
   .menu__itens--acesso {
     border-bottom: none;
   }
 
- .menu__item {
-   position: relative;
-   transition: all 0.4s ease;
-   margin-bottom: 0;
- }
+  .menu__item {
+    position: relative;
+    transition: all 0.4s ease;
+    margin-bottom: 0;
+  }
 
- .menu__item--acesso {
-   margin-left: 1.5rem;
- }
+  .menu__item--acesso {
+    margin-left: 1.5rem;
+  }
 
- .item__link {
-  font: 700 1.125rem "DM Sans", sans-serif;
+  .menu__link {
+    margin-right: 1.5rem;
+  }
+
+  .item__link {
+  font: 700 1rem "DM Sans", sans-serif;
   color: var(--cor2);
- }
+  }
 
- .item__link--plataformas {
-   margin-left: 1.5rem;
-   margin-right: 0.5rem;
- }
+  .item__link--plataformas {
+    /* margin-left: 1.5rem; */
+    margin-right: 0.5rem;
+  }
 
   .menu__link > i {
   color: var(--cor2);
@@ -209,20 +288,13 @@ color: #313131;
   .subMenu {
    background-color: rgba(255, 255, 255, 0.87);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   /* background-color: #3c00718c; */
    backdrop-filter: blur(1rem);
    display: none;
    position: absolute;
-   left: 1.5rem;
    width: 13rem;
   }
  
- /* .menu__item:focus-within > .subMenu,
- .menu__item:hover > .subMenu {
-   display: initial;
- } */
-
- .subMenu__item, .subMenu__link {
+  .subMenu__item, .subMenu__link {
   transition: all 0.4s ease;
   }
 
@@ -235,63 +307,81 @@ color: #313131;
    backdrop-filter: blur(1rem);
   }
 
- .subMenu__link {
+  .subMenu__link {
     font: 700 0.875rem "DM Sans", sans-serif;
     color: var(--cor2);
     line-height: 2em;
     margin-left: 0.5rem;
-}
+  }
 
   .subMenu__item:hover > .subMenu__link {
     color: var(--cor5);
   }
 
- .menu__form {
-   position: relative;
-   width: 22rem;
- }
+  .menu__form {
+    position: absolute;
+    top: 0.25rem;
+    right: 12.75rem;
+  }
 
- .menu__form > input {
-  background-color: transparent;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  min-height: 50px;
-  outline: 0;
-  padding: 1em 1em 1em 3.5em;
-  width: 100%;
-}
+  /* .form__busca {
+    position: relative;
+    width: 22rem;
+  }
+  */
 
-.menu__form > input::placeholder {
-  color: #313131;
-  font: 400 1.125rem "DM Sans", sans-serif;
-  opacity: 0.5;
-}
+  .form__busca > input {
+    /* background-color: var(--cor2);
+    border: none; */
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-height: 50px;
+    outline: 0;
+    padding: 1em 1em 1em 3.5em;
+    width: 50px;
+    /* visibility: visible; */
+  }
 
-.menu__form > button {
-  background-color: transparent;
-  border: none;
-  color: #313131;
-  opacity: 0.5;
-  position: absolute;
-  left: 1rem;
-  top: 35%;
-  text-transform: uppercase;
-}
+  /*
+  .form__busca > input::placeholder {
+    color: #313131;
+    font: 400 1.125rem "DM Sans", sans-serif;
+    opacity: 0.5;
+  }
+  */
 
-.menu__item > .botao--acesso {
-  align-items: center;
-  background-color: var(--cor2);
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: var(--cor5);
-  display: inline-flex;
-  font: 500 1rem "DM Sans", sans-serif;
-  justify-content: center;
-  padding: 1rem 2rem;
-  text-align: center;
-  width: 100%;
-  /* transition: all 0.4s ease-in-out; */
-}
+  /* .form__busca > button {
+    color: var(--cor5);
+  }  */
+
+  .menu__form:focus-within > .form__busca > input, 
+  .menu__form:hover > .form__busca > input {
+    min-height: 50px;
+    width: 15rem;
+    padding: 1em;
+    border-radius: 10px;
+    visibility: visible;
+  }
+  
+  .menu__form:focus-within > .form__busca > button,
+  .menu__form:hover > .form__busca > button {
+    color: #313131;
+    opacity: 0.5;
+  }
+
+  .menu__item > .botao--acesso {
+    align-items: center;
+    background-color: var(--cor2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--cor5);
+    display: inline-flex;
+    font: 500 1rem "DM Sans", sans-serif;
+    justify-content: center;
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 100%;
+    /* transition: all 0.4s ease-in-out; */
+  }
 
 }
