@@ -38,6 +38,9 @@ body {
   padding: 1rem 0;
 }
 
+.texto-extra-pequeno {
+  font: 200 0.7rem "DM Sans", sans-serif !important;
+}
 
 @media screen and (min-width:963px) {
   
