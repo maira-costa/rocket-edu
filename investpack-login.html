@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,21 +14,23 @@
 
   <link rel="stylesheet" href="assets/css/header.css">
 
+  <link rel="stylesheet" href="assets/css/login.css">
+
   <link rel="stylesheet" href="assets/css/home/botao.css">
   <link rel="stylesheet" href="assets/css/home/home-inicio.css">
-  <link rel="stylesheet" href="assets/css/home/home-como-funciona.css">
-
-  <link rel="stylesheet" href="assets/css/footer.css">
 
   <!--Fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,200&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,200&display=swap"
+    rel="stylesheet">
 
   <!--Ícones-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
+
 <body>
   <header class="header">
     <div class="container container--header">
@@ -51,7 +54,7 @@
             </li>
             <li class="menu__item menu__item--plataformas">
               <div class="menu__link">
-                <a class="item__link item__link--plataformas"href="#">InvestVERSO</a>
+                <a class="item__link item__link--plataformas" href="#">InvestVERSO</a>
                 <i class="fas fa-chevron-down"></i>
               </div>
               <ul class="subMenu">
@@ -75,18 +78,32 @@
       </nav>
     </div>
   </header>
-  
+
   <main>
     <section class="secao secao--inicio" id="inicio">
       <div class="container container--inicio">
         <div class="inicio__conteudo">
-          <div class="conteudo__botoes">
-            <a class="botao botao--enviar" href="#">Fazer login</a>
-          </div>
+          <p class="texto-pequeno"><b>Faça login em sua conta da Rocket EDU !</b></p>
+          <hr> 
+          <a class="butao-customizado caixa-de-texto" href="#">
+            Continuar com Google
+          </a>
+          <form>
+            <input class="caixa-de-texto" type="text" id="email" name="email" placeholder="Email">
+            <input class="caixa-de-texto" type="password" id="senha" name="senha" placeholder="Senha">
+            <!-- TO DO: alinhar icone fechadura com o fim da caixa de texto da senha -->
+            <!-- <i class="fas fa-lock icone"></i> -->
+          </form>
+          <a class="botao botao--enviar" href="#">Fazer login</a>
+          <a href="#">
+            <p class="texto-pequeno">ou <b>Esqueci a Senha</b></p>
+          </a>
         </div>
       </div>
-    
+    </section>
+
   </main>
   <script src="assets/js/header.js"></script>
 </body>
+
 </html>
