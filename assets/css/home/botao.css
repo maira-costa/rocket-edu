@@ -10,7 +10,7 @@
   padding: 1rem 2rem;
   text-align: center;
   width: 100%;
-  /* transition: all 0.4s ease-in-out; */
+  transition: all 0.4s ease-in-out;
 }
 
 .botao--enviar {
@@ -33,6 +33,11 @@
 
 /* .botao:hover {
   background-color: var(--cor-logo);
+.botao:hover {
+  /* background-color: var(--cor3);
+  >>>>>>> main
   transform: translateY(-3px);
-} */
+}
+*/
+
 

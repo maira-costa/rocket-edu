@@ -29,6 +29,7 @@
   background-color: transparent;
   border: 2px solid var(--cor-branca);
   border-radius: 10px;
+  color: var(--cor5);
   min-height: 50px;
   outline: 0;
   padding: 1em;

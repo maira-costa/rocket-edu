@@ -1,3 +1,6 @@
+
+/* Menu mobile com referência no tutorial do vídeo localizado em https://www.youtube.com/watch?v=DnODupiIAiE */
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {

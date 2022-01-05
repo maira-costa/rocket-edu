@@ -43,7 +43,6 @@
 .titulo--produto{
   font: 700 1.125rem Poppins, sans-serif;
   margin-bottom: 0.4em;
-
 }
 
 .texto--produto {
@@ -91,10 +90,6 @@
   .produto:last-child {
     margin-bottom: 8rem;
   }
-
-  /* .produto__conteudo {
-    max-width: 50%;
-  } */
 
   .titulo--produto{
     font-size: 1.875rem;

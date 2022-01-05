@@ -33,11 +33,19 @@
 
   <header class="header">
     <div class="container container--header">
-      <a href="#" class="logo">rocket <span>edu</span></a>
+      <a href="index.html" class="logo">rocket <span>edu</span></a>
       <nav class="nav" id="nav">
-        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-          <span id="hamburger"></span>
-        </button>
+        <div class="menuMobile">
+          <div class="menu__form">
+            <form class="form__busca" action="#">
+              <input type="search" class="input-search"  required>
+              <button type="submit" class="fas fa-search"></button>
+            </form>
+          </div>
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+          </button>
+        </div>
         <div class="menu" id="menu">
           <ul class="menu__itens menu__itens--plataformas">
             <li class="menu__item menu__item--plataformas">
@@ -47,7 +55,7 @@
               </div>
               <ul class="subMenu">
                 <li class="subMenu__item"><a class="subMenu__link" href="investpack-cursos.html">Cursos</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="">Material de Apoio</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="investpack-meterial.html">Material de Apoio</a></li>
                 <li class="subMenu__item"><a class="subMenu__link" href="investpack-palestras.html">Palestras</a></li>
               </ul>
             </li>
@@ -57,19 +65,13 @@
                 <i class="fas fa-chevron-down"></i>
               </div>
               <ul class="subMenu">
-                <li class="subMenu__item"><a class="subMenu__link" href="">Jogos</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="">Notícias</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="">Simulador de Investimentos</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="investverso-jogos.html">Jogos</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="investverso-noticias.html">Notícias</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="investverso-simulador.html">Simulador de Investimentos</a></li>
               </ul>
             </li>
           </ul>
           <ul class="menu__itens menu__itens--acesso">
-            <li class="menu__item menu__item--acesso">
-              <form class="menu__form" action="#">
-                <input type="search" class="search-data" placeholder="Pesquise por qualquer coisa" required>
-                <button type="submit" class="fas fa-search"></button>
-              </form>
-            </li>
             <li class="menu__item menu__item--acesso"><a class="item__link" href="#">Entrar</a></li>
             <li class="menu__item menu__item--acesso"><a class="botao botao--acesso" href="#">Cadastrar</a></li>
           </ul>
@@ -158,6 +160,8 @@
       </div>
     </div>
   </footer>
+
   <script src="assets/js/header.js"></script>
+  
 </body>
 </html>
