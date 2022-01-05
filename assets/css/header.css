@@ -352,7 +352,7 @@ color: #313131;
   */
 
   /* .form__busca > button {
-    color: var(--cor5);
+    color: var(--cor-branca);
   }  */
 
   .menu__form:focus-within > .form__busca > input, 
@@ -375,7 +375,7 @@ color: #313131;
     background-color: var(--cor-roxa);
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: var(--cor5);
+    color: var(--cor-branca);
     display: inline-flex;
     font: 500 1rem "DM Sans", sans-serif;
     justify-content: center;
