@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROCKET EDU</title>
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/container.css">
+  <link rel="stylesheet" href="assets/css/pular-navegacao.css">
+
+  <link rel="stylesheet" href="assets/css/header.css">
+
+  <link rel="stylesheet" href="assets/css/home/botao.css">
+  <link rel="stylesheet" href="assets/css/home/home-inicio.css">
+  <link rel="stylesheet" href="assets/css/home/home-como-funciona.css">
+
+  <link rel="stylesheet" href="assets/css/investpack/base-invest.css">
+  <link rel="stylesheet" href="assets/css/investpack/slider.css">
+  <link rel="stylesheet" href="assets/css/investpack/investpack-cursos.css">
+  <link rel="stylesheet" href="assets/css/investpack/investpack-palestras.css">
+  
+
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,200&display=swap" rel="stylesheet">
+
+  <!--Ícones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <!--Material de Apoio-->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/investpack/material.css">
+
+
+</head>
+<body>
+  <a class="pularNavegacao" href="#conteudoPrincipal">Pular para conteúdo principal</a> <!--Recurso de Acessibilidade-->
+
+  <header class="header">
+    <div class="container container--header">
+      <a href="index.html" class="logo">rocket <span>edu</span></a>
+      <nav class="nav" id="nav">
+        <div class="menuMobile">
+          <div class="menu__form">
+            <form class="form__busca" action="#">
+              <input type="search" class="input-search"  required>
+              <button type="submit" class="fas fa-search"></button>
+            </form>
+          </div>
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+          </button>
+        </div>
+        <div class="menu" id="menu">
+          <ul class="menu__itens menu__itens--plataformas">
+            <li class="menu__item menu__item--plataformas">
+              <div class="menu__link">
+                <a class="item__link item__link--plataformas" href="#">InvestPACK</a>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="subMenu">
+                <li class="subMenu__item"><a class="subMenu__link" href="investpack-cursos.html">Cursos</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="investpack-material.html">Material de Apoio</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="investpack-palestras.html">Palestras</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--plataformas">
+              <div class="menu__link">
+                <a class="item__link item__link--plataformas"href="#">InvestVERSO</a>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="subMenu">
+                <li class="subMenu__item"><a class="subMenu__link" href="investverso-jogos.html">Jogos</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="investverso-noticias.html">Notícias</a></li>
+                <li class="subMenu__item"><a class="subMenu__link" href="investverso-simulador.html">Simulador de Investimentos</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="menu__itens menu__itens--acesso">
+            <li class="menu__item menu__item--acesso"><a class="item__link" href="#">Entrar</a></li>
+            <li class="menu__item menu__item--acesso"><a class="botao botao--acesso" href="#">Cadastrar</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="secao">
+      <div class="container container--invest">         
+        <div id="faq" class="faq">
+          <div class="container assuntos__">
+            <h2 class="titulo--invest__assuntos">Assuntos</h2>
+            <ul id="faq-list">
+              <li>
+                <a data-toggle="collapse" class="collapsed material" href="#faq1">Investimentos</a>
+                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos na Bolsa de Valores</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Ações</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Bens Imobiliáres</a>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" class="collapsed material" href="#faq2">Bolsa de valores</a>
+                <div id="faq2" class="collapse material__itens" data-parent="#faq-list">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Bolsa de Valores</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Bolsa de Valores</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Bolsa de Valores</a>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" class="collapsed material" href="#faq3">Tesouro Direto</a>
+                <div id="faq3" class="collapse material__itens" data-parent="#faq-list">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Tesouro Direto</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Tesouro Direto</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Tesouro Direto</a>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" class="collapsed material" href="#faq4">Renda fixa</a>
+                <div id="faq4" class="collapse material__itens" data-parent="#faq-list">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda Fixa</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda Fixa</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda Fixa</a>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" class="collapsed material" href="#faq5">Renda variavel</a>
+                <div id="faq5" class="collapse material__itens" data-parent="#faq-list">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda variavel</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda variavel</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda variavel</a>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" class="collapsed material" href="#faq6">Ações</a>
+                <div id="faq6" class="collapse material__itens" data-parent="#faq-list">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre aplicações em Ações</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre aplicações em Ações</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre aplicações em Ações</a>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" class="collapsed material" href="#faq7">Criptomoedas</a>
+                <div id="faq7" class="collapse material__itens" data-parent="#faq-list">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Bitcoin</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Dogecoin</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Eteriun</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Shibacoin</a>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" class="collapsed material" href="#faq8">Demonstratinos finenceiros</a>
+                <div id="faq8" class="collapse material__itens" data-parent="#faq-list">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos na Bolsa de Valores</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Ações</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Bens Imobiliáres</a>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" class="collapsed material" href="#faq9">Certificação e consultores</a>
+                <div id="faq9" class="collapse material__itens" data-parent="#faq-list">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos na Bolsa de Valores</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Ações</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Bens Imobiliáres</a>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" class="collapsed material" href="#faq10">Bens Imobiliáres</a>
+                <div id="faq10" class="collapse material__itens" data-parent="#faq-list">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila de apliçoes em Bens Imobiliáres</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila de apliçoes em Bens Imobiliáres</a>
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila de apliçoes em Bens Imobiliáres</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>  
+    </section>      
+   
+  </main>
+  <footer class="footer">
+    <div class="container conta iner--footer">
+      <a href="#" class="logo logo--footer">rocket <span>edu</span></a>
+      <div class="contato">
+        <div class="newsletter">
+          <h2 class="titulo titulo--footer">Conecte-se conosco!</h3>
+          <p class="texto texto--contato">Seja o primeiro a receber as últimas novidades
+            sobre Rocket Edu.</p>
+          <form class="contato__form" action="#" method="post" enctype="text/plain">
+            <input class="form__email--input" type="email" name="email" id="email" placeholder="Digite seu e-mail" required/>
+            <button class="form__botao--receber" type="submit">
+              Receber
+            </button>
+          </form>
+        </div>
+        <div class="social">
+          <h2 class="titulo titulo--footer">Redes Sociais</h2>
+          <div class="social__icones">
+            <a class="social__icone" href="https://www.instagram.com/" target="_blank"><img class="icone__img" src="assets/img/footer/instagram.svg" alt="instagram"></a>
+            <a class="social__icone" href="https://www.facebook.com/" target="_blank"><img class="icone__img" src="assets/img/footer/facebook.svg" alt="facebook"></a>
+            <a class="social__icone" href="https://www.youtube.com/" target="_blank"><img class="icone__img" src="assets/img/footer/youtube.svg" alt="youtube"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>  
