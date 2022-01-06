@@ -3,10 +3,9 @@
   padding: 1.5em 0;
 }
 
-.logo--footer, .logo--footer > span {
+.logo__nome--footer, .logo__nome--footer > span, .logo__icone--footer {
   color: var(--cor-branca);
   font-size: 1.5rem;
-  
 }
 
 .titulo--footer {
@@ -84,16 +83,16 @@
     justify-content: space-between;
   }
 
-  .logo--footer, .logo--footer > span {
+  .logo__nome--footer, .logo__nome--footer > span, .logo__icone--footer {
     font-size: 3rem;
   }
 
-  .contato {
+  /* .contato {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 64%;
-  }
+  } */
 
   .titulo--footer {
     font-size: 1.75rem;
