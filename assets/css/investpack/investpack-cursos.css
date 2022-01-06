@@ -31,12 +31,6 @@
   justify-content: space-between;
   
 }
-
-.avaliacao{
-  width: 91px;
-  height: 21px;
-}
-
 .valor_curso {
   font: 700 0.75rem "DM Sans", sans-serif ;
   color: var(--cor-branca);

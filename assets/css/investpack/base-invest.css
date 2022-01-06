@@ -11,6 +11,7 @@
   justify-content: center;
 
 }
+
 .texto_banner{ 
 color: var(--cor-branca);  
 font: 700 2.5rem "Poppins", sans-serif;  
@@ -21,8 +22,6 @@ font: 700 2.5rem "Poppins", sans-serif;
   font: 700 1rem "DM Sans", sans-serif;
   text-align: right;
 }
-
-
 
 .container--invest{
   margin-top: 2rem;
@@ -49,10 +48,14 @@ font: 700 2.5rem "Poppins", sans-serif;
   width: 15rem;
   height: 16rem;
   margin-bottom: 1.6875rem;
-  background-image: linear-gradient(180deg, #9145B6 0%, #4C3F91 100%);
-  
+  background-image: linear-gradient(180deg, #9145B6 0%, #4C3F91 100%);  
   padding: 1rem;
   border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.conteudo__invest--populares:hover {
+  color: #7300ff41;
 }
 
 .conteudo__invest--todos{     
@@ -60,7 +63,10 @@ font: 700 2.5rem "Poppins", sans-serif;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #9145B6 ;
 }
-
+.avaliacao{
+  width: 91px;
+  height: 21px;
+}
 
 
 @media screen and (min-width:963px){
