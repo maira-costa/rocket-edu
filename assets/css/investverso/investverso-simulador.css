@@ -1,0 +1,17 @@
+main {
+    margin-top: 4.625rem;
+    height: calc(100vh - 4.625rem);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width:963px) {
+  
+    main {
+        margin-top: 6.30rem;
+        height: calc(100vh - 6.30rem);
+    }
+  
+  }

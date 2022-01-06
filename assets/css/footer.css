@@ -38,7 +38,7 @@
 
 .form__email--input::placeholder {
   color: var(--cor-branca);
-  font: 400 0.625rem Poppins, sans-serif;
+  font: 400 0.8125rem Poppins, sans-serif;
   opacity: 1;
 }
 
@@ -46,10 +46,11 @@
   background-color: transparent;
   border: none;
   color: var(--cor-branca);
-  font: 700 0.625rem Poppins, sans-serif;
+  font: 700 0.8125rem Poppins, sans-serif;
   position: absolute;
   right: 1rem;
-  top: 35%;
+  top: 50%;
+  transform: translateY(-50%);
   text-transform: uppercase;
 }
 

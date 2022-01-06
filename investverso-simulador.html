@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ENTRAR NO ROCKET EDU</title>
+  <title>ROCKET EDU</title>
 
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/base.css">
@@ -14,24 +13,22 @@
 
   <link rel="stylesheet" href="assets/css/header.css">
 
-  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/investverso/investverso-simulador.css">  
 
-  <link rel="stylesheet" href="assets/css/home/botao.css">
-  <link rel="stylesheet" href="assets/css/home/home-inicio.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
 
   <!--Fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,200&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,200&display=swap" rel="stylesheet">
 
   <!--Ícones-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
-
 <body>
+  <a class="pularNavegacao" href="#conteudoPrincipal">Pular para conteúdo principal</a> <!--Recurso de Acessibilidade-->
+
   <header class="header">
     <div class="container container--header">
       <a href="index.html" class="logo">rocket <span>edu</span></a>
@@ -80,32 +77,40 @@
       </nav>
     </div>
   </header>
-
+  
   <main>
-    <section class="secao secao--inicio" id="inicio">
-      <div class="container container--inicio">
-        <div class="inicio__conteudo">
-          <p class="texto-pequeno"><b>Faça login em sua conta da Rocket EDU !</b></p>
-          <hr> 
-          <a class="butao-customizado caixa-de-texto" href="#">
-            Continuar com Google
-          </a>
-          <form>
-            <input class="caixa-de-texto" type="text" id="email" name="email" placeholder="E-mail">
-            <input class="caixa-de-texto" type="password" id="senha" name="password" placeholder="Senha">
-            <!-- TO DO: alinhar icone fechadura com o fim da caixa de texto da senha -->
-            <!-- <i class="fas fa-lock icone"></i> -->
+      <div>
+          <h1>EM CONSTRUÇÃO</h1>
+      </div>
+  </main>  
+  <footer class="footer">
+    <div class="container container--footer">
+      <a href="#" class="logo logo--footer">rocket <span>edu</span></a>
+      <div class="contato">
+        <div class="newsletter">
+          <h2 class="titulo titulo--footer">Conecte-se conosco!</h3>
+          <p class="texto texto--contato">Seja o primeiro a receber as últimas novidades
+            sobre Rocket Edu.</p>
+          <form class="contato__form" action="#" method="post" enctype="text/plain">
+            <input class="form__email--input" type="email" name="email" id="email" placeholder="Digite seu e-mail" required/>
+            <button class="form__botao--receber" type="submit">
+              Receber
+            </button>
           </form>
-          <a class="botao botao--enviar" href="#">Fazer login</a>
-          <a href="#">
-            <p class="texto-pequeno">ou <b>Esqueci a Senha</b></p>
-          </a>
+        </div>
+        <div class="social">
+          <h2 class="titulo titulo--footer">Redes Sociais</h2>
+          <div class="social__icones">
+            <a class="social__icone" href="https://www.instagram.com/" target="_blank"><img class="icone__img" src="assets/img/footer/instagram.svg" alt="instagram"></a>
+            <a class="social__icone" href="https://www.facebook.com/" target="_blank"><img class="icone__img" src="assets/img/footer/facebook.svg" alt="facebook"></a>
+            <a class="social__icone" href="https://www.youtube.com/" target="_blank"><img class="icone__img" src="assets/img/footer/youtube.svg" alt="youtube"></a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
 
-  </main>
   <script src="assets/js/header.js"></script>
+  
 </body>
-
 </html>
