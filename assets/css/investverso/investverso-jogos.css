@@ -7,6 +7,9 @@
   display: inline;
   
 }
+.conteudo__invest--populares {
+  height: 18rem;
+}
 
 .capa__jogo--populares{
   width: 100%;
@@ -15,9 +18,12 @@
 .descricao_jogo{
   font: 400 0.9rem "DM Sans", sans-serif;
   width: 100%;
+  color: var(--cor-branca);
 } 
+
+
 .descricao_jogo--todos{
-  
+  color: var(--cor-cinza);  
   width: 100%;
   font: 400 0.9rem "DM Sans", sans-serif;
   margin-bottom: 0.5rem;
@@ -27,7 +33,12 @@
   margin-top: 1.5rem;
   font: 700 1rem "DM Sans", sans-serif;
   margin-bottom: 0.5rem;
+  color: var(--cor-cinza-claro-titulo-invest);
 
+}
+
+.nome_do_jogo--todos{
+  color: var(--cor-cinza);
 }
 
 .avaliacao{

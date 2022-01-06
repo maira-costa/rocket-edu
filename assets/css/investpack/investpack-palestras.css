@@ -1,6 +1,6 @@
 
 .video__palestra--populares{
-  width: 15rem;
+  width: 13rem;
   height: 8rem;
 }
 .video__palestra{
@@ -10,11 +10,19 @@
 }
 .nome_da_palestra{
  font: 700 1rem "DM Sans",  sans-serif;
+ color: var(--cor-cinza-claro-titulo-invest);
+ 
+}
+.nome_da_palestra--todos{
+  color: var(--cor-cinza);
 }
 .palestrante{
   font: 400 1rem "DM Sans",  sans-serif;
+  color: var(--cor-branca);
 }
-
+.palestrante--todos{
+  color: var(--cor-cinza);
+}
 @media screen and (min-width:963px){
   
   .video__palestra{

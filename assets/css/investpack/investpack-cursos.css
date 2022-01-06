@@ -1,4 +1,6 @@
 
+
+
 .capa__curso--todos{
   width: 100%;
   height: auto;
@@ -10,16 +12,24 @@
 
 .nome_do_curso {
   font: 700 1rem "DM Sans", sans-serif;
+  color: var(--cor-cinza-claro-titulo-invest);
+}
+.nome_do_curso--todos {
+  color: var(--cor-cinza);
 }
 
 .horas_curso {
   font: 400 0.82rem "DM Sans", sans-serif ;
+  color: var(--cor-branca);
+}
+.horas_curso--todos {
+  color: var(--cor-cinza);
 }
 
 .horasEavaliacao_curso{
-  display: flex;
-  
+  display: flex;  
   justify-content: space-between;
+  
 }
 
 .avaliacao{
@@ -29,14 +39,17 @@
 
 .valor_curso {
   font: 700 0.75rem "DM Sans", sans-serif ;
+  color: var(--cor-branca);
+}
+.valor_curso--todos {
+  color: var(--cor-cinza);
 }
 
 
 
 
 @media screen and (min-width:963px){
-
-  .horasEavaliacao_curso {    
+   .horasEavaliacao_curso {    
     gap: 3rem;    
   }
 
@@ -53,7 +66,7 @@
     width: 50%;
     height: auto;
   }
-
+  
 
 }
 
