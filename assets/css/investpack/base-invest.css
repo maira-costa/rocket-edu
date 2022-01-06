@@ -18,9 +18,11 @@ font: 700 2.5rem "Poppins", sans-serif;
 
 .texto_banner--menor {
   color: var(--cor-branca); 
-  font: 700 2rem "Poppins", sans-serif;
+  font: 700 1rem "DM Sans", sans-serif;
   text-align: right;
 }
+
+
 
 .container--invest{
   margin-top: 2rem;
@@ -62,6 +64,11 @@ font: 700 2.5rem "Poppins", sans-serif;
 
 
 @media screen and (min-width:963px){
+  .texto_banner--menor{
+    font-size: 2rem;
+  }
+
+  
   .banner_invest{
     margin-top: 6.30rem;
   }
@@ -73,9 +80,7 @@ font: 700 2.5rem "Poppins", sans-serif;
   .conteudo__invest--todos{  
     display: flex; 
     gap: 2rem;
-    justify-content: left;
-    
-      
+    justify-content: left;      
   }
   
 }
