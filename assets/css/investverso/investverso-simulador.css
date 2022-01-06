@@ -1,6 +1,6 @@
 main {
    margin-top: 4.625rem;
-    height: calc(100vh - 4.625rem);
+    /* height: calc(100vh - 4.625rem); */
    
     
 } 
@@ -11,12 +11,18 @@ main {
   
     main {
         margin-top: 6.30rem;
-        height: calc(100vh - 6.30rem);
+        /* height: calc(100vh - 6.30rem); */
 
     }
+
     .cotacoes {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
+        width: 21rem;
+        background: #fff;
+        padding: 1rem;
     }
 
      
