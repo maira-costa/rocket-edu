@@ -1,6 +1,7 @@
 # rocket-edu
 Site desenvolvido para o 2º Desafio Integrado do Programa Trilhas
 
+Disponível em: https://maira-costa.github.io/rocket-edu/
 
 ## Desafio:
 
@@ -14,7 +15,7 @@ Site desenvolvido para o 2º Desafio Integrado do Programa Trilhas
 
 ## O SITE:
 
-ROCKET EDU é uma plataforma de ensino de educação financeira para professores e estudantes com idade entre 15 e 18 anos. Ela é composta por duas sub-plataformas: a InvestPACK, onde poderão ter acesso a cursos, materiais de leitura e palestras; e a InvestVERSO, voltada para a área de ivestimentos, com jogos, notícias sobre o mercado financeiro e um simulador de investimentos com carteira virtual.
+<a href="https://maira-costa.github.io/rocket-edu/">ROCKET EDU</a> é uma plataforma gamificada de educação financeira para professores e estudantes. Ela é composta por duas sub-plataformas: a InvestPACK, onde poderão ter acesso a cursos, materiais de leitura e palestras; e a InvestVERSO, voltada para a área de investimentos, com jogos, notícias sobre o mercado financeiro e um simulador de investimentos com carteira virtual.
 
-O objetivo do projeto é que jovens em final de educação escolar possam adquirir conhecimentos básicos de como ter na fase adulta uma vida financeira saudável.
+O objetivo do projeto é que jovens em final de educação escolar possam adquirir conhecimentos básicos para conquistar uma vida financeira saudável na fase adulta.
 
