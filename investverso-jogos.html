@@ -29,60 +29,12 @@
 
   <!--Ícones-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
   <a class="pularNavegacao" href="#conteudoPrincipal">Pular para conteúdo principal</a> <!--Recurso de Acessibilidade-->
 
-  <header class="header">
-    <div class="container container--header">
-      <div class="logo">
-        <i class="fas fa-rocket logo__icone"></i>
-        <a href="index.html" class="logo__nome">rocket <span>edu</span></a>
-      </div>
-      <nav class="nav" id="nav">
-        <div class="menuMobile">
-          <div class="menu__form">
-            <form class="form__busca" action="#">
-              <input type="search" class="input-search" placeholder="Busca..." required>
-              <button type="submit" class="fas fa-search"></button>
-            </form>
-          </div>
-          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-            <span id="hamburger"></span>
-          </button>
-        </div>
-        <div class="menu" id="menu">
-          <ul class="menu__itens menu__itens--plataformas">
-            <li class="menu__item menu__item--plataformas" data-dropdown>
-              <div class="menu__link">
-                <a class="item__link item__link--plataformas" data-dropdown-button href="#">InvestPACK <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <ul class="subMenu">
-                <li class="subMenu__item"><a class="subMenu__link" href="investpack-cursos.html">Cursos</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="investpack-material.html">Material de Apoio</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="investpack-palestras.html">Palestras</a></li>
-              </ul>
-            </li>
-            <li class="menu__item menu__item--plataformas" data-dropdown>
-              <div class="menu__link">
-                <a class="item__link item__link--plataformas" data-dropdown-button href="#">InvestVERSO <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <ul class="subMenu">
-                <li class="subMenu__item"><a class="subMenu__link" href="investverso-jogos.html">Jogos</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="investverso-noticias.html">Notícias</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="investverso-simulador.html">Simulador de Investimentos</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="menu__itens menu__itens--acesso">
-            <li class="menu__item menu__item--acesso"><a class="item__link" href="investpack-login.html">Entrar</a></li>
-            <li class="menu__item menu__item--acesso"><a class="botao botao--acesso" href="investpack-cadastro.html">Cadastrar</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <div id="header"></div>
   
   <main>
     <section class="banner_invest">
@@ -220,7 +172,7 @@
       </div>
     </div>
   </footer>
-  <script src="assets/js/header.js"></script>
+  <script src="assets/js/loader.js"></script>
   <script src="assets/js/slider-cursos.js"></script>
 </body>
 </html>  
