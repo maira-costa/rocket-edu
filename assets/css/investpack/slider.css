@@ -1,4 +1,5 @@
-/*SLIDER*/
+
+
 #items-wrapper{
   width: 100%;  
 }
@@ -19,3 +20,5 @@
 #items::-webkit-scrollbar {
   background: transparent;
 }  
+
+

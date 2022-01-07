@@ -1,3 +1,4 @@
+
 .banner_invest { 
   
   /*----BACKGROUND PATTERN site: https://www.svgbackgrounds.com/ ----*/
@@ -66,8 +67,10 @@ font: 700 2.5rem "Poppins", sans-serif;
   width: 91px;
   height: 21px;
 }
-
-
+.glide__slides{
+  display: flex;
+  gap: 1rem;
+}
 @media screen and (min-width:963px){
   .texto_banner--menor{
     font-size: 2rem;
@@ -89,3 +92,4 @@ font: 700 2.5rem "Poppins", sans-serif;
   }
   
 }
+
