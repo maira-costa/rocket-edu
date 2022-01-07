@@ -2,6 +2,7 @@
 .video__palestra--populares{
   width: 13rem;
   height: 8rem;
+  pointer-events: auto;
 }
 .video__palestra{
   width: 100%;
@@ -39,7 +40,6 @@
   .palestrante--todos{
     font-size: 0.95rem;
   }
-
 
 }
 
