@@ -1,35 +1,39 @@
 .assuntos__ {
     margin: 5rem 0;
 }
+
 .material {
     display: flex;
     background-color: var(--cor-roxa);
     padding: 8px;
     border-radius: 8px;
     font: 400 1.125rem "DM Sans", sans-serif;
-    text-decoration: none !important;
+    /* text-decoration: none !important; */
     color: var(--cor-branca);
     margin: 10px 0;
 }
+
 .material__itens{
     display: flex;
     flex-direction: column;
 }
+
 .material__apostila {
-    text-decoration: none !important;
+    /* text-decoration: none !important; */
     display: flex;
     font: 400 1.125rem "DM Sans", sans-serif;
     color: var(--cor-cinza);
     padding: 10px 0;
 }
+
 .img__pdf {
     margin: 0.4rem;
     width: 20px;
     height: 20px;
 }
 
-.titulo--invest__assuntos {
+/* .titulo--invest__assuntos {
     margin-left: 0.3rem;
     font: 700 1.125rem "DM Sans", sans-serif;
     color: #000000
-}
+} */

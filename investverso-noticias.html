@@ -13,12 +13,12 @@
 
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/home/botao.css">
-  
+
   <link rel="stylesheet" href="assets/css/investpack/base-invest.css">
-  <link rel="stylesheet" href="assets/css/investpack/slider.css">
-  <link rel="stylesheet" href="assets/css/investpack/investpack-palestras.css">
-  <link rel="stylesheet" href="assets/css/investverso/noticias.css">
   
+  
+  <link rel="stylesheet" href="assets/css/investverso/noticias.css">
+
   <link rel="stylesheet" href="assets/css/footer.css">
 
   <!--Fontes-->
@@ -28,60 +28,13 @@
 
   <!--Ícones-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 <body>
   <a class="pularNavegacao" href="#conteudoPrincipal">Pular para conteúdo principal</a> <!--Recurso de Acessibilidade-->
 
-  <header class="header">
-    <div class="container container--header">
-      <div class="logo">
-        <i class="fas fa-rocket logo__icone"></i>
-        <a href="index.html" class="logo__nome">rocket <span>edu</span></a>
-      </div>
-      <nav class="nav" id="nav">
-        <div class="menuMobile">
-          <div class="menu__form">
-            <form class="form__busca" action="#">
-              <input type="search" class="input-search" placeholder="Busca..." required>
-              <button type="submit" class="fas fa-search"></button>
-            </form>
-          </div>
-          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-            <span id="hamburger"></span>
-          </button>
-        </div>
-        <div class="menu" id="menu">
-          <ul class="menu__itens menu__itens--plataformas">
-            <li class="menu__item menu__item--plataformas" data-dropdown>
-              <div class="menu__link">
-                <a class="item__link item__link--plataformas" data-dropdown-button href="#">InvestPACK <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <ul class="subMenu">
-                <li class="subMenu__item"><a class="subMenu__link" href="investpack-cursos.html">Cursos</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="investpack-material.html">Material de Apoio</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="investpack-palestras.html">Palestras</a></li>
-              </ul>
-            </li>
-            <li class="menu__item menu__item--plataformas" data-dropdown>
-              <div class="menu__link">
-                <a class="item__link item__link--plataformas" data-dropdown-button href="#">InvestVERSO <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <ul class="subMenu">
-                <li class="subMenu__item"><a class="subMenu__link" href="investverso-jogos.html">Jogos</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="investverso-noticias.html">Notícias</a></li>
-                <li class="subMenu__item"><a class="subMenu__link" href="investverso-simulador.html">Simulador de Investimentos</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="menu__itens menu__itens--acesso">
-            <li class="menu__item menu__item--acesso"><a class="item__link" href="investpack-login.html">Entrar</a></li>
-            <li class="menu__item menu__item--acesso"><a class="botao botao--acesso" href="investpack-cadastro.html">Cadastrar</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <div id="header"></div>
 
   <main>
     <section class="banner_invest">
@@ -97,202 +50,228 @@
           Notícias para você
         </h1>
       </h1>
-      <h2 class="subtitulo__invest--populares">Mais populares</h2>
+      
     </section>
     <section class="secao">
       <div class="container container--invest">         
-        <div id="faq" class="faq">
-          <div class="container noticias__">
-            <h2 class="titulo--invest__noticias">07/01/2022</h2>
-            <ul id="faq-list">
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq1">Investimentos</a>
-                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
+        
+          <div class="noticias">
+            
+            <h2 class="titulo--invest__noticias">08/01/2022</h2>
+
+            <div id="conteudo-listas">
+              
+              <!--   INVESTIMENTOS   -->
+              <ul class="lista" id="investimentos" data-dropdown>
+
+                <button class="collapsed conteudo" href="#investimentos" data-dropdown-button>Investimentos</button>
+
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/Investing.png" alt="">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png" alt="">
                     <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>          
+                      <a href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
+                      </a>
+                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
+                </li>
+                  
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/Valor Econômico.png" alt="">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Valor Econômico.png" alt="">
                     <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">Diversificação, o único almoço grátis do mercado financeiro</h3>
+                      <a href="https://valor.globo.com/financas/coluna/diversificacao-o-unico-almoco-gratis-do-mercado-financeiro.ghtml" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">Diversificação, o único almoço grátis do mercado financeiro</h3>
+                      </a>
                       <p class="descricao_noticias descricao_noticias--todos">Valor Econômico</p>          
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
+                </li>
+                  
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/Tecmundo.png" alt="">
-                    <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">O que esperar do mercado financeiro em 2022</h3>
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Tecmundo.png" alt="">
+                    <div class="texto_noticia">                      
+                      <a href="https://www.tecmundo.com.br/mercado/230086-esperar-mercado-financeiro-2022.htm" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">O que esperar do mercado financeiro em 2022</h3>
+                      </a>
                       <p class="descricao_noticias descricao_noticias--todos">Tecmundo</p>          
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq2">Demonstrativos financeiros</a>
-                <div id="faq2" class="collapse material__itens" data-parent="#faq-list">
+                </li>
+
+              </ul>
+              
+              <!--   DEMONSTRATIVOS FINANCEIROS   -->
+
+              <ul class="lista" id="demonstrativos" data-dropdown>
+
+                <button class="collapsed conteudo" href="#demonstrativos" data-dropdown-button>Demonstrativos Financeiros</button>
+
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/demonstrativos 1 1.png" alt="">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/demonstrativos 1 1.png" alt="">
                     <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">Tipos de demonstrações financeiras e sua importância</h3>
-                      <p class="descricao_noticias descricao_noticias--todos">totvs.com</p>          
+                      <a href="https://www.totvs.com/blog/gestao-de-servicos/demonstracoes-financeiras/" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">Tipos de demonstrações financeiras e sua importância</h3>
+                      </a>
+                      <p class="descricao_noticias descricao_noticias--todos">totvs.com</p>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
+                </li>
+                        
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/Valor Econômico.png" alt="">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png" alt="">
                     <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>          
+                      <a href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
+                      </a>
+                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
+                </li>
+                                 
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/Ações-money-forbes.png" alt="">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Ações-money-forbes.png" alt="">
                     <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">Demonstrativos financeiros: entenda como analisar os resultados trimestrais das companhias</h3>
-                      <p class="descricao_noticias descricao_noticias--todos">forbes.com</p>          
+                      <a href="https://forbes.com.br/forbes-money/2021/05/demonstrativos-financeiros-entenda-como-analisar-os-resultados-trimestrais-das-companhias/" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">Demonstrativos financeiros: entenda como analisar os resultados trimestrais das companhias</h3>
+                      </a>
+                      <p class="descricao_noticias descricao_noticias--todos">forbes.com</p>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq3">Certificação de consultores</a>
-                <div id="faq3" class="collapse material__itens" data-parent="#faq-list">
+                </li>
+                                 
+              </ul>           
+
+              <!--   CERTIFICAÇÃO DE CONSULTORES   -->
+              <ul class="lista" id="certificacao" data-dropdown>
+
+                <button class="collapsed conteudo" href="#certificacao" data-dropdown-button>Certificação de consultores</button>
+
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/Investing.png" alt="">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png" alt="">
                     <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>          
-                    </div>
-                  </div>   
-                </div>
-              </li>
-              <li>
-                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/consultoria-certificacao-.png" alt="">
-                    <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">Melhores Programas de Certificação em Consultoria 2022</h3>
-                      <p class="descricao_noticias descricao_noticias--todos">academiccourses.com</p>          
+                      <a href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
+                      </a>
+                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
+                </li>
+                              
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/Tecmundo.png" alt="">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/consultoria-certificacao-.png" alt="">
                     <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>          
+                      <a href="https://www.academiccourses.com.br/Certificado/Consultoria/" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">Melhores Programas de Certificação em Consultoria 2022</h3>
+                      </a>
+                      <p class="descricao_noticias descricao_noticias--todos">academiccourses.com</p>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq4">Bolsa de valores</a>
-                <div id="faq4" class="collapse material__itens" data-parent="#faq-list">
+                </li>                  
+
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/bolsa de v 1.png" alt="">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png" alt="">
                     <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">Entenda como funciona o mercado de ações e a bolsa de valores</h3>
-                      <p class="descricao_noticias descricao_noticias--todos">infomoney.com.br</p>          
+                      <a href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
+                      </a>
+                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
+                </li>
+                  
+              </ul>
+                  
+              <!--   BOLSA DE VALORES   -->
+
+              <ul class="lista" id="bolsa" data-dropdown>
+
+                <button class="collapsed conteudo" href="#bolsa" data-dropdown-button>Bolsa de Valores</button>
+
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/Valor Econômico.png" alt="">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/bolsa de v 1.png" alt="">
                     <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>          
+                      <a href="https://www.infomoney.com.br/guias/mercado-de-acoes/" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">Entenda como funciona o mercado de ações e a bolsa de valores</h3>
+                      </a>
+                      <p class="descricao_noticias descricao_noticias--todos">infomoney.com.br</p>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
+                </li>
+                                  
+                <li class="collapse conteudo__itens">
                   <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/Tecmundo.png" alt="">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png">
                     <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>          
+                      <a href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
+                      </a>
+                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>
                     </div>
                   </div>
-                </div>
-              </li>
+                </li>
+                    
+                <li class="collapse conteudo__itens">
+                  <div class="conteudo__invest--todos">
+                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png" alt="">
+                    <div class="texto_noticia">
+                      <a href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
+                        <h3 class="nome_da_noticia nome_da_noticia-todos">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
+                      </a>
+                      <p class="descricao_noticias descricao_noticias--todos">Investing.com Brasil</p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+                  
+                  
+
               <div class="container noticias__"></div>
-                <h2 class="titulo--invest__noticias">06/01/2022</h2>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq5">Certificação de consultores</a>
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias/certificacao_2 1.png" alt="">
-                    <div class="texto_noticia">
-                      <h3 class="nome_da_noticia nome_da_noticia-todos">As 10 melhores empresas de Consultoria para certificação ISO no Brasil</h3>
-                      <p class="descricao_noticias descricao_noticias--todos"> Consultorias e Afins</p>          
+                <h2 class="titulo--invest__noticias">07/01/2022</h2>
+              
+              <!--   CONSULTORIA   -->
+
+              <ul class="lista" id="consultoria" data-dropdown>
+                <button class="collapsed conteudo" href="#consultoria" data-dropdown-button>Consultoria</button>
+                <li class="collapse conteudo__itens">
+                    <div class="conteudo__invest--todos">
+                      <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/certificacao_2 1.png"">
+                      <div class="texto_noticia">
+                        <a href="https://www.ohub.com.br/empresas/consultoria-para-certificacao-iso" target="_blank">
+                          <h3 class="nome_da_noticia nome_da_noticia-todos">As 10 melhores empresas de Consultoria para certificação ISO no Brasil</h3>
+                        </a>
+                        <p class="descricao_noticias descricao_noticias--todos"> Consultorias e Afins</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+                </li>
+              </ul>
+
+            </div>
+          
         </section>
       </div>  
     </section>    
 <!-- noticias END -->
       
   </main>
-  <footer class="footer">
-    <div class="container container--footer">
 
-      <div class="logo">
-        <i class="fas fa-rocket logo__icone logo__icone--footer"></i>
-        <a href="#" class="logo__nome logo__nome--footer">rocket <span>edu</span></a>
-      </div>
-      
-      <div class="newsletter">
-        <h2 class="titulo titulo--footer">Conecte-se conosco!</h3>
-        <p class="texto texto--contato">Seja o primeiro a receber as últimas novidades
-          sobre Rocket Edu.</p>
-        <form class="contato__form" action="#" method="post" enctype="text/plain">
-          <input class="form__email--input" type="email" name="email" id="email" placeholder="Digite seu e-mail" required/>
-          <button class="form__botao--receber" type="submit">
-            Receber
-          </button>
-        </form>
-      </div>
+  <div id="footer"></div>
 
-      <div class="social">
-        <h2 class="titulo titulo--footer">Redes Sociais</h2>
-        <div class="social__icones">
-          <a class="social__icone" href="https://www.instagram.com/" target="_blank"><img class="icone__img" src="assets/img/footer/instagram.svg" alt="instagram"></a>
-          <a class="social__icone" href="https://www.facebook.com/" target="_blank"><img class="icone__img" src="assets/img/footer/facebook.svg" alt="facebook"></a>
-          <a class="social__icone" href="https://www.youtube.com/" target="_blank"><img class="icone__img" src="assets/img/footer/youtube.svg" alt="youtube"></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="assets/js/header.js"></script>
-  <script src="assets/js/slider-cursos.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/acordion.js"></script>
+  
+
 </body>
 </html>  
