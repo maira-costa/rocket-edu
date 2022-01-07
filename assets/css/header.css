@@ -120,12 +120,15 @@
 
 .item__link--plataformas {
   margin-right: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
  
 .item__link > i {
-font-size: 0.75rem;
-color: #313131;
-margin-left: 0.5rem;
+  font-size: 0.75rem;
+  color: #313131;
+  margin-left: 0.5rem;
 }
 
 .subMenu {
@@ -137,6 +140,7 @@ margin-left: 0.5rem;
   color: var(--cor-roxa);
   line-height: 2.5em;
   margin-left: 1rem;
+  display: block;
 }
 
 /* .menu__item:focus-within > .subMenu,

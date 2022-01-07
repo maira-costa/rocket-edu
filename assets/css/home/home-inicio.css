@@ -7,6 +7,7 @@
   margin-top: 4.625rem;
   padding-bottom: 1.5rem;
   height: calc(100vh - 4.625rem);
+  position: relative;
 }
 
 .container--inicio {
@@ -63,7 +64,7 @@
   position: relative;
 }
 
-/*Animação com referência no vídeo disponível em https://www.youtube.com/watch?v=mAewuQPMFI8*/
+/*Animação com referência no vídeo disponível em https://www.youtube.com/watch?v=mAewuQPMFI8 */
 
 @keyframes animate {
   0%, 100%
@@ -76,6 +77,26 @@
   }
 }
 
+/*Animação estrelas*/
+.secao--inicio i {
+  margin-top: 4.625rem;
+  position: absolute;
+  top: -250px;
+  background: rgba(255, 255, 255, 0.3);
+  animation: animateStars linear infinite;
+  z-index: 0;
+}
+
+@keyframes animateStars {
+  0%
+  {
+    transform: translateY(0);
+  }
+  100%
+  {
+    transform: translateY(calc(100vh));
+  }
+}
 
 @media screen and (min-width:963px) {
   
