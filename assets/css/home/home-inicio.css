@@ -155,6 +155,10 @@
     
   }
 
+  .botao--inicioUm:hover, .botao--inicioDois:hover {
+    transform: translateY(-3px);   
+  }
+
   .inicio__img {
     height: auto;
     width: 40%;

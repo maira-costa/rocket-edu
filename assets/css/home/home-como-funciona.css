@@ -1,10 +1,52 @@
-.container--comoFunciona {
-  margin-top: 2rem;
+.secao--comecar, .secao--perguntas {
+  /* background-image: url(/assets/img/home/background.png);
+  background-position: center;
+  background-size: cover; */
+  background-color: #F9F9F9;
 }
 
-.titulo--comoFunciona {
+.container--perguntas {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.pergunta {
+  padding: 2rem;
+  border-radius: 30px;
+  background-color: #5dc4bd;
+}
+
+.titulo--pergunta {
+  color: var(--cor-roxa);
   text-align: center;
   font: 700 1.5rem Poppins, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.titulo--pergunta:last-child {
+  margin-bottom: 0;
+}
+
+.resposta {
+  font: 400 1.125rem "DM Sans", sans-serif;
+  color: var(--cor-roxa);
+  text-align: center;
+}
+
+.secao--comecar {
+  background: linear-gradient(180deg, #180035 0%, #4C1264 100%);
+} 
+
+.container--comecar {
+  padding: 2rem 0;  
+}
+
+.titulo--comecar {
+  font: 700 1.5rem Poppins, sans-serif;
+  color: var(--cor-branca);
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -24,29 +66,40 @@
   background-color: #71B8FF;
 }
 
-.produto--material {
-  background-color: #FF6673;
+.produto--investpack {
+  background-color: #87C7DF;
 }
 
-.produto--simulador {
-  background-color: #FFAA5B;
+.produto--investverso {
+  background-color: #F4818E;
 }
 
-.produto--carteira {
-  background-color: #7C83FF;
+.produto--rocketcoins {
+  background-color: #85CD9C;
 }
 
-.produto:last-child {
+/* .produto:last-child {
   margin-bottom: 2rem;
-}
+} */
 
 .titulo--produto{
-  font: 700 1.125rem Poppins, sans-serif;
+  font: 700 1.5625rem Poppins, sans-serif;
   margin-bottom: 0.4em;
+  text-align: center;
 }
 
 .texto--produto {
-  font-weight: 500;
+  font: 500 1.125rem "DM Sans", sans-serif;
+  color: var(--cor-roxa);
+}
+
+.texto--produto > span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.texto--produto > span.dica {
+  font-size: 1.125rem;
 }
 
 .botao--produto {
@@ -60,47 +113,127 @@
   width: 174px;
 }
 
+
 @media screen and (min-width:963px) {
-
-  .container--comoFunciona {
-    margin-top: 7rem;
-  }
-
-  .titulo--comoFunciona {
-    font-size: 4.375rem;
-    margin-bottom: 10rem;
-  }
-
-  .produto {
-    border-radius: 84px;
-    flex-direction: row;
+  
+  .container--perguntas {
+    padding: 10rem 0;
     gap: 4rem;
-    height: 26rem;
-    justify-content: space-between;
-    margin-bottom: 3.5rem;
-    padding: 1.5rem 5rem;
+  }
+
+  .pergunta {
+    border-radius: 84px 84px 0px 84px;
+    padding: 4rem;
+    max-width: 70%;
+  }
+  
+  .pergunta--dois {
+    border-radius: 84px 84px 84px 0px;
+    align-self: flex-end;
+  }
+
+  .pergunta--um > h2, .pergunta--um > p  {
     text-align: left;
   }
 
-  .produto--financeiro, .produto--simulador {
-    flex-direction: row-reverse;
+  .pergunta--dois > h2, .pergunta--dois > p  {
+    text-align: right;    
+  }
+  
+  .titulo--pergunta {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .resposta {
+    font-size: 1.5625rem;
+    /* margin-bottom: 8rem;   */
+  }
+
+  /* .pergunta--dois > p {
+    margin: 0;
+  } */
+
+  .container--comecar {
+    padding-top: 10rem;
+  }
+  
+  .titulo--comecar {
+    font-size: 3.15rem;
+  }
+
+  .produtos {
+    display: flex;
+    gap: 6rem;
+    height: 2000px;
+    flex-direction: column;
+    background-image: url(/assets/img/home/background-desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8rem 0;
+  }
+
+  .produto {
+    border-radius: 84px 84px 0px 84px;
+    padding: 3rem;
+    max-width: 50%;
+  }
+
+  .produto__conteudo {
+    text-align: left;
+  }
+
+  .produto__conteudo--direita {
+    text-align: right;
+  }
+  
+  
+  .produto--investverso {
+    margin-right: 0;
+    border-radius: 84px 84px 84px 0px;
+    text-align: right;
+    align-self: flex-end;
+  }
+
+  
+  .titulo--produto{
+    font-size: 1.875rem;
+    text-align: left;
+  }
+
+  .produto__conteudo--direita > h3 {
     text-align: right;
   }
 
-  .produto:last-child {
-    margin-bottom: 8rem;
+  .texto--produto {
+    font-size: 1.25rem;
   }
 
-  .titulo--produto{
-    font-size: 1.875rem;
+  .texto--produto > span {
+    font-size: 1.5rem;
   }
-  
-  .texto--produto {
-    font-size: 1.625rem;
+
+  .texto--produto > span.dica {
+    font-size: 1.25rem;
   }
-  
+
+  .wrap-botao {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .produto__conteudo--direita .wrap-botao {
+    justify-content: flex-start;
+  }
+
   .botao--produto {
     width: auto;
+  }
+
+  .botao--produto:hover {
+    transform: translateY(-3px);   
   }
 
   .produto__img {
