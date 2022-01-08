@@ -15,10 +15,10 @@
   <link rel="stylesheet" href="assets/css/home/botao.css">
 
   <link rel="stylesheet" href="assets/css/investpack/base-invest.css">
-  <link rel="stylesheet" href="assets/css/investpack/slider.css">
+  <link rel="stylesheet" href="assets/css/accordion.css">
+
   <link rel="stylesheet" href="assets/css/investpack/investpack-cursos.css">
-  <link rel="stylesheet" href="assets/css/investpack/investpack-palestras.css">
-  
+    
 
   <link rel="stylesheet" href="assets/css/footer.css">
 
@@ -52,94 +52,148 @@
     </section>
     <section class="secao">
       <div class="container container--invest">         
-        <div id="faq" class="faq">
-          <div class="container container--invest">
+        
+          <div class="material">
+
             <h2 class="titulo--invest">Assuntos</h2>
-            <ul id="faq-list">
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq1">Investimentos</a>
-                <div id="faq1" class="collapse material__itens" data-parent="#faq-list">
+
+            <div id="conteudo-listas">
+
+              <ul class="lista" id="investimentos" data-dropdown>
+                <button class="conteudo" data-dropdown-button  href="#investimentos">Investimentos</button>
+                <li class="conteudo__itens">               
                   <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos na Bolsa de Valores</a>
+                </li>
+                <li class="conteudo__itens">               
                   <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Ações</a>
+                </li>
+                <li class="conteudo__itens">               
                   <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Bens Imobiliáres</a>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq2">Bolsa de valores</a>
-                <div id="faq2" class="collapse material__itens" data-parent="#faq-list">
+                </li>             
+              </ul>
+              
+              <ul class="lista" id="bolsa" data-dropdown>
+                <button class="conteudo" data-dropdown-button>Bolsa de Valores</button>                
+                <li class="conteudo__itens">               
                   <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Bolsa de Valores</a>
+                </li>
+                <li class="conteudo__itens">               
                   <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Bolsa de Valores</a>
+                </li>
+                <li class="conteudo__itens">               
                   <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Bolsa de Valores</a>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq3">Tesouro Direto</a>
-                <div id="faq3" class="collapse material__itens" data-parent="#faq-list">
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Tesouro Direto</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Tesouro Direto</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Tesouro Direto</a>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq4">Renda fixa</a>
-                <div id="faq4" class="collapse material__itens" data-parent="#faq-list">
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda Fixa</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda Fixa</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda Fixa</a>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq5">Renda variável</a>
-                <div id="faq5" class="collapse material__itens" data-parent="#faq-list">
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda variavel</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda variavel</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda variavel</a>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq6">Ações</a>
-                <div id="faq6" class="collapse material__itens" data-parent="#faq-list">
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre aplicações em Ações</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre aplicações em Ações</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre aplicações em Ações</a>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq7">Criptomoedas</a>
-                <div id="faq7" class="collapse material__itens" data-parent="#faq-list">
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Bitcoin</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Polkadot</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Eterium</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Celo</a>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq8">Demonstrativos financeiros</a>
-                <div id="faq8" class="collapse material__itens" data-parent="#faq-list">
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos na Bolsa de Valores</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Ações</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Bens Imobiliários</a>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq9">Certificação e consultores</a>
-                <div id="faq9" class="collapse material__itens" data-parent="#faq-list">
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos na Bolsa de Valores</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Ações</a>
-                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos em Bens Imobiliários</a>
-                </div>
-              </li>
-              <li>
-                <a data-toggle="collapse" class="collapsed material" href="#faq10">Bens Imobiliários</a>
-                <div id="faq10" class="collapse material__itens" data-parent="#faq-list">
+                </li>               
+                
+              </ul>
+              
+              <ul class="lista" id="tesouro" data-dropdown>
+                <button class="conteudo" data-dropdown-button>Tesouro Direto</button>              
+                <li class="conteudo__itens"> 
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Tesouro Direto</a>              
+                </li>
+                <li class="conteudo__itens">  
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Tesouro Direto</a>             
+                </li>
+                <li class="conteudo__itens">  
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Tesouro Direto</a>             
+                </li>
+              </ul>
+
+              <ul class="lista" id="renda-fixa" data-dropdown>
+                <button class="conteudo" data-dropdown-button>Renda Fixa</button>                
+                <li class="conteudo__itens">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda Fixa</a>               
+                </li>
+                <li class="conteudo__itens">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda Fixa</a>               
+                </li>
+                <li class="conteudo__itens">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda Fixa</a>               
+                </li>
+              </ul>
+
+              <ul class="lista" id="renda-variavel" data-dropdown>
+                <button class="conteudo" data-dropdown-button>Renda Variável</button>                
+                <li class="conteudo__itens">    
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda variavel</a>           
+                </li>
+                <li class="conteudo__itens">  
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda variavel</a>             
+                </li>
+                <li class="conteudo__itens">    
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila Renda variavel</a>           
+                </li>                                 
+              </ul>
+
+              <ul class="lista" id="acoes" data-dropdown>
+                <button class="conteudo" data-dropdown-button>Ações</button>
+                <li class="conteudo__itens">   
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre aplicações em Ações</a>            
+                </li>
+                <li class="conteudo__itens"> 
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre aplicações em Ações</a>              
+                </li>
+                <li class="conteudo__itens">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre aplicações em Ações</a>               
+                </li>               
+              </ul>
+
+              <ul class="lista" id="criptomoedas" data-dropdown>
+                <button class="conteudo" data-dropdown-button>Criptomoedas</button>               
+                <li class="conteudo__itens">   
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Bitcoin</a>            
+                </li>
+                <li class="conteudo__itens"> 
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Bitcoin</a>              
+                </li>
+                <li class="conteudo__itens">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila sobre Bitcoin</a>               
+                </li>                               
+              </ul>
+
+              <ul class="lista" id="demonstrativos" data-dropdown>
+                <button class="conteudo" data-dropdown-button>Demonstrativos Financeiros</button>                
+                <li class="conteudo__itens">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos na Bolsa de Valores</a>               
+                </li>
+                <li class="conteudo__itens">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos na Bolsa de Valores</a>               
+                </li>
+                <li class="conteudo__itens">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Investimentos na Bolsa de Valores</a>               
+                </li>                 
+              </ul>
+
+              <ul class="lista" id="certificacao" data-dropdown>
+                <button class="conteudo" data-dropdown-button>Certificação e Consultores</button>                
+                <li class="conteudo__itens">   
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Certificação e Consultores</a>             
+                </li>
+                <li class="conteudo__itens">   
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Certificação e Consultores</a>             
+                </li>
+                <li class="conteudo__itens">
+                  <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Certificação e Consultores</a>               
+                </li>                                 
+              </ul>
+
+              <ul class="lista" id="bens-imobiliarios" data-dropdown>
+                <button class="conteudo" data-dropdown-button>Bens Imobiliários</button>              
+                <li class="conteudo__itens">
                   <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila de aplicações em Bens Imobiliários</a>
+                </li>
+                <li class="conteudo__itens">
                   <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila de aplicações em Bens Imobiliários</a>
+                </li>
+                <li class="conteudo__itens">
                   <a class="material__apostila" href="#"><img class="img__pdf" src="./assets/img/investpack-material/pdf_img.png">Apostila de aplicações em Bens Imobiliários</a>
-                </div>
-              </li>
-            </ul>
+                </li>
+                
+              </ul>
+
+            </div>
           </div>
-        </section>
+        
 
       </div>  
     </section>      
@@ -149,5 +203,7 @@
   <div id="footer"></div>
 
   <script src="assets/js/loader.js"></script>
+  <script src="assets/js/accordion.js"></script>
+
 </body>
 </html>  

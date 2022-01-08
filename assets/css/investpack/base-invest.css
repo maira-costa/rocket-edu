@@ -38,6 +38,7 @@ font: 700 2.5rem "Poppins", sans-serif;
   margin-top: 1rem;
   padding-bottom: 0.56rem;
 }
+
 .subtitulo__invest--todos{
   font: 700 1.125rem "DM Sans", sans-serif;
   padding-bottom: 1rem;
@@ -63,14 +64,17 @@ font: 700 2.5rem "Poppins", sans-serif;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #9145B6 ;
 }
+
 .avaliacao{
   width: 91px;
   height: 21px;
 }
+
 .glide__slides{
   display: flex;
   gap: 1rem;
 }
+
 @media screen and (min-width:963px){
   .texto_banner--menor{
     font-size: 2rem;

@@ -1,0 +1,32 @@
+.lista{
+    transition: all 0.5s ease-in-out;
+}
+
+.conteudo__itens {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease-in-out, max-height 0.3s ease-in-out;
+}
+    
+.lista:hover {
+    transform: translateY(-3px);
+}
+
+.lista.active > .conteudo__itens {
+    max-height: 100%;
+    opacity: 1;
+}
+
+.conteudo {
+    display: flex;
+    background-color: var(--cor-roxa);
+    padding: 8px;
+    border-radius: 8px;
+    font: 400 1.125rem "DM Sans", sans-serif;
+    color: var(--cor-branca);
+    margin: 10px 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
