@@ -20,6 +20,7 @@
   margin-left: auto;
   margin-right: auto;
   font: 500 0.875rem "DM Sans", sans-serif;
+  width: 18rem;
 }
 
 @media screen and (min-width:963px) {
@@ -27,7 +28,7 @@
     font-size: 1rem;
     padding: 1rem;
     text-align: center;
-    width: 18rem;
+    
   }
 }
 

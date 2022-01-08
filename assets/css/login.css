@@ -12,9 +12,16 @@
 }
 
 .butao-customizado {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   color: var(--cor-verde-escuro) !important;
   text-align: center;
   font: 500 0.875rem "DM Sans", sans-serif;
+}
+
+.icone_google {
+  width: 20px;  
 }
 
 hr {

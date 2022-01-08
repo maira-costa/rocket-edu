@@ -1,0 +1,26 @@
+<svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>logo googleg 48dp</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(224 1590)">
+<g id="logo googleg 48dp">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(-213.667 -1581.82)" fill="#4285F4"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(-222.603 -1578.1)" fill="#34A853"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path2_fill" transform="translate(-223.667 -1584.49)" fill="#FBBC05"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path3_fill" transform="translate(-222.603 -1590)" fill="#EA4335"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 9.6 2.04545C 9.6 1.33636 9.53636 0.654546 9.41818 1.48537e-07L 0 1.48537e-07L 0 3.86818L 5.38182 3.86818C 5.15 5.11818 4.44546 6.17727 3.38636 6.88636L 3.38636 9.39546L 6.61818 9.39546C 8.50909 7.65455 9.6 5.09091 9.6 2.04545Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 8.93636 8.1C 11.6364 8.1 13.9 7.20455 15.5545 5.67727L 12.3227 3.16818C 11.4273 3.76818 10.2818 4.12273 8.93636 4.12273C 6.33182 4.12273 4.12727 2.36364 3.34091 4.23855e-08L -2.06489e-08 4.23855e-08L -2.06489e-08 2.59091C 1.64545 5.85909 5.02727 8.1 8.93636 8.1Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 4.40455 6.39091C 4.20455 5.79091 4.09091 5.15 4.09091 4.49091C 4.09091 3.83182 4.20455 3.19091 4.40455 2.59091L 4.40455 4.22919e-08L 1.06364 4.22919e-08C 0.386364 1.35 0 2.87727 0 4.49091C 0 6.10455 0.386364 7.63182 1.06364 8.98182L 4.40455 6.39091Z"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 8.93636 3.97727C 10.4045 3.97727 11.7227 4.48182 12.7591 5.47273L 15.6273 2.60455C 13.8955 0.990909 11.6318 0 8.93636 0C 5.02727 0 1.64545 2.24091 -2.06489e-08 5.50909L 3.34091 8.1C 4.12727 5.73636 6.33182 3.97727 8.93636 3.97727Z"/>
+</defs>
+</svg>

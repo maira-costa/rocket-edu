@@ -1,6 +1,6 @@
 main {
    margin-top: 4.625rem;
-    /* height: calc(100vh - 4.625rem); */
+    
    
     
 } 
@@ -11,20 +11,25 @@ main {
   
     main {
         margin-top: 6.30rem;
-        /* height: calc(100vh - 6.30rem); */
+        height: calc(100vh - 6.30rem); 
 
     }
-
-    .cotacoes {
+    .construcao{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 1rem;
-        width: 21rem;
-        background: #fff;
-        padding: 1rem;
     }
 
-     
-  
+
+    .img_construcao{
+        margin-top: 2rem;    
+        width: 25%;
+    }
+    .texto_construcao{
+        margin-top: 1rem;
+        text-align: center;
+        font: 700 2rem "DM Sans", sans-serif;
+        color: var(--cor-roxa);
+    }
+    
 }
