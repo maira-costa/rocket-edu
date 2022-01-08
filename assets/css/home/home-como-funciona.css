@@ -1,7 +1,4 @@
-.secao--comecar, .secao--perguntas {
-  /* background-image: url(/assets/img/home/background.png);
-  background-position: center;
-  background-size: cover; */
+.secao--perguntas {
   background-color: #F9F9F9;
 }
 
@@ -147,12 +144,7 @@
 
   .resposta {
     font-size: 1.5625rem;
-    /* margin-bottom: 8rem;   */
   }
-
-  /* .pergunta--dois > p {
-    margin: 0;
-  } */
 
   .container--comecar {
     padding-top: 10rem;

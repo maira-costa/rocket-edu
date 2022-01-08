@@ -1,6 +1,6 @@
-.secao--equipe {
-    background-color: var(--cor-verde-teal);
-}
+/* .secao--equipe {
+    background-color: var(--cor-branca);
+} */
 
 .container--equipe {
     padding: 2rem 0;
@@ -45,7 +45,7 @@
 
 @media screen and (min-width:963px) {
     .container--equipe {
-        padding: 5rem 0;
+        padding: 3rem 0;
     }
 
     .wrap-componentes {
