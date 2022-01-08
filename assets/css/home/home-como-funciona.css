@@ -167,7 +167,7 @@
     gap: 6rem;
     height: 2000px;
     flex-direction: column;
-    background-image: url(../assets/img/home/background-desktop.png);
+    background-image: url("https://github.com/maira-costa/rocket-edu/blob/main/assets/img/home/background-desktop.png?raw=true");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
