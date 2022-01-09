@@ -1,8 +1,6 @@
-.noticias__ {
-    margin: 1rem 0;
+.noticias{
+    margin: 1rem 0 2rem;
 }
-
-
 
 .conteudo__itens{
   display: flex;
@@ -77,6 +75,10 @@
 
 
 @media screen and (min-width:963px){
+  .noticias {
+    margin-bottom: 3rem;
+  }
+
   .capa__noticias--todos{
     width: 18rem;
     height: 10rem;
