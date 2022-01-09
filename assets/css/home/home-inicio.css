@@ -60,7 +60,7 @@
 .inicio__img {
   height: 35%;
   width: auto;
-  animation: animate 0.2s ease infinite;
+  animation: animate 2s ease-in-out infinite;
   position: relative;
 }
 
@@ -69,11 +69,11 @@
 @keyframes animate {
   0%, 100%
   {
-    transform: translateY(-1px);
+    transform: translateY(-4px);
   }
   50%
   {
-    transform: translateY(1px);
+    transform: translateY(4px);
   }
 }
 
