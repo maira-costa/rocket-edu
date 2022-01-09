@@ -1,5 +1,5 @@
 .secao--perguntas {
-  background-color: #F9F9F9;
+  background-color: #645f8e;
 }
 
 .container--perguntas {
@@ -121,20 +121,11 @@
   .pergunta {
     border-radius: 84px 84px 84px 0px;
     padding: 4rem;
-    max-width: 70%;
-  }
-  
-  .pergunta--dois {
-    border-radius: 84px 84px 0px 84px;       
-    align-self: flex-end;
+    max-width: 80%;
   }
 
   .pergunta--um > h2, .pergunta--um > p  {
     text-align: left;
-  }
-
-  .pergunta--dois > h2, .pergunta--dois > p  {
-    text-align: right;    
   }
   
   .titulo--pergunta {
