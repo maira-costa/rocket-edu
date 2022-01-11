@@ -208,7 +208,7 @@
   color: var(--cor-roxa);
 }
 
-.menu__item > .botao--acesso {
+.menu__item > .botao--acesso, .menu__item > .botao--sair {
   background: none;
   box-shadow: none;
   color: var(--cor-roxa);
@@ -216,6 +216,18 @@
   text-align: left;
   justify-content: flex-start;
   padding: 0;
+}
+
+.usuario {
+  display: flex;
+  gap: 1rem;
+}
+
+.infoUser {
+  margin-top: 2rem;
+  display: block;
+  font: 400 1rem "DM Sans", sans-serif;
+  color: #313131;
 }
 
 @media screen and (min-width:963px) {
@@ -353,7 +365,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 12.75rem;
+    right: 14rem;
   }
 
   .form__busca > input::placeholder {
@@ -393,4 +405,14 @@
     transform: translateY(-3px);  
   }
 
+  .infoUser {
+    margin-top: 0;
+    display: block;
+    font: 400 1.125rem "DM Sans", sans-serif;
+    color: #313131;
+  }
+
+  .menu__item > .botao--sair {
+    padding: 0.5rem 1rem;
+  }
 }

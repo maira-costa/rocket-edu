@@ -2,16 +2,16 @@
   <div class="container container--header">
     <div class="logo">
       <i class="fas fa-rocket logo__icone"></i>
-      <a href="index.html" class="logo__nome">rocket <span>edu</span></a>
+      <a href="investpack-cursos.html" class="logo__nome">rocket <span>edu</span></a>
     </div>
     <nav class="nav" id="nav">
       <div class="menuMobile">
-        <!-- <div class="menu__form">
+        <div class="menu__form">
           <form class="form__busca" action="#">
             <input type="search" class="input-search" placeholder="Busca..." required>
             <button type="submit" class="fas fa-search"></button>
           </form>
-        </div> -->
+        </div>
         <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
           <span id="hamburger"></span>
         </button>
@@ -44,10 +44,13 @@
           </li>
         </ul>
         <ul class="menu__itens menu__itens--acesso">
-          <li class="menu__item menu__item--acesso"><a class="item__link" href="investpack-login.html">Entrar</a></li>
-          <li class="menu__item menu__item--acesso"><a class="botao botao--acesso"
-              href="investpack-cadastro.html">Cadastrar</a></li>
-          </ul>
+          <li class="menu__item menu__item--acesso usuario">     
+            <p id="usuarioLogado" class="infoUser"></p>
+            <p id="rocketcoins" class="infoUser"></p>
+          </li>
+          <li class="menu__item menu__item--acesso"><a  onclick="sair()" class="botao botao--sair"
+            href="#">Sair</a></li>
+        </ul>
       </div>
     </nav>
   </div>

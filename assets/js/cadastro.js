@@ -125,4 +125,4 @@ function cadastrar(){
         msgSuccess.setAttribute('style', 'display: none')
     }
 }
-  
+
