@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/css/login.css">
 
   <link rel="stylesheet" href="assets/css/home/botao.css">
-  <link rel="stylesheet" href="assets/css/home/home-inicio.css">
+  
 
   <!--Fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,19 +38,31 @@
   <div id="header"></div>
 
   <main>
-    <section class="secao secao--inicio" id="inicio">
-      <div class="container container--inicio">
-        <div class="inicio__conteudo">
-          <p class="texto-pequeno"><b>Inscreva-se e comece a aprender!</b></p>
+    <section class="secao secao--acesso" id="cadastro">
+      <div class="container container--acesso">
+        <div class="card">
+          <h1 class="texto-pequeno">Inscreva-se e comece a aprender!</h1>
+
+          <div id="msgError"></div>
+          <div id="msgSuccess"></div>
+
           <hr> 
           <form>
-            <input class="caixa-de-texto" type="text" id="nome" name="name" placeholder="Nome Completo">
-            <input class="caixa-de-texto" type="text" id="email" name="email" placeholder="E-mail">
+            <label id="labelNome" for="nome"></label>
+            <input class="caixa-de-texto" type="text" id="nome" name="nome" placeholder="Nome Completo">
+
+            <label id="labelUsuario" for="usuario"></label>
+            <input class="caixa-de-texto" type="text" id="usuario" name="usuario" placeholder="Usuário">
+            
+            <label id="labelSenha" for="senha"></label>
             <input class="caixa-de-texto" type="password" id="senha" name="password" placeholder="Senha">
-            <!-- TO DO: alinhar icone fechadura com o fim da caixa de texto da senha -->
-            <!-- <i class="fas fa-lock icone"></i> -->
+            <i id="verSenha" class="far fa-eye icone incone icone--cadastro"></i>
+
+            <label id="labelConfirmarSenha" for="confirmarSenha"></label>
+            <input class="caixa-de-texto" type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar Senha">
+            <i id="verConfSenha" class="far fa-eye icone"></i>
           </form>
-          <a class="botao botao--enviar" href="#">Cadastrar</a>
+          <a onclick='cadastrar()' class="botao botao--enviar" href="#">Cadastrar</a>
           <br>
           <a href="#">
             <p class="texto-extra-pequeno texto-pequeno">
@@ -59,7 +71,7 @@
             </p>
           </a>
           <br>
-          <a href="#">
+          <a href="investpack-login.html">
             <p class="texto-pequeno">Já faz parte? <b>Entrar</b></p>
           </a>
         </div>
@@ -68,6 +80,7 @@
 
   </main>
   <script src="assets/js/loader.js"></script>
+  <script src="assets/js/acesso.js"></script>
 </body>
 
 </html>
