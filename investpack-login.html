@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="assets/css/login.css">
 
   <link rel="stylesheet" href="assets/css/home/botao.css">
-  <link rel="stylesheet" href="assets/css/home/home-inicio.css">
 
   <!--Fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +29,7 @@
 
   <!--Ícones-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -38,23 +38,23 @@
   <div id="header"></div>
 
   <main>
-    <section class="secao secao--inicio" id="inicio">
-      <div class="container container--inicio">
-        <div class="inicio__conteudo">
-          <p class="texto-pequeno"><b>Faça login em sua conta da Rocket EDU !</b></p>
+    <section class="secao secao--acesso" id="login">
+      <div class="container container--acesso">
+        <div class="card">
+                 
+          <h1 class="texto-pequeno">Faça login em sua conta da Rocket EDU !</h1>
+          
           <hr> 
           
-            <a class="butao-customizado caixa-de-texto" href="#">
-              Continuar com Google
-              <img class="icone_google"src="assets/img/home/google.svg" alt="">
-            </a>
-            
-          
+          <a class="botao-customizado caixa-de-texto" href="#">
+            <img class="icone_google"src="assets/img/home/google.svg" alt="">
+            Continuar com Google         
+          </a>
+              
           <form>
-            <input class="caixa-de-texto" type="text" id="email" name="email" placeholder="E-mail">
-            <input class="caixa-de-texto" type="password" id="senha" name="password" placeholder="Senha">
-            <!-- TO DO: alinhar icone fechadura com o fim da caixa de texto da senha -->
-            <!-- <i class="fas fa-lock icone"></i> -->
+            <input class="caixa-de-texto" type="text" id="usuario" name="usuario" placeholder="Usuário" required> 
+            <input class="caixa-de-texto" type="password" id="senha" name="password" placeholder="Senha" required>
+            <i id="verSenha" class="far fa-eye icone"></i>
           </form>
           <a class="botao botao--enviar" href="#">Fazer login</a>
           <a href="#">
@@ -66,6 +66,7 @@
 
   </main>
   <script src="assets/js/loader.js"></script>
+  <script src="assets/js/acesso.js"></script>
 </body>
 
 </html>
