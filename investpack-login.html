@@ -44,6 +44,8 @@
                  
           <h1 class="texto-pequeno">Faça login em sua conta da Rocket EDU !</h1>
           
+          <div id="msgError"></div>
+          
           <hr> 
           
           <a class="botao-customizado caixa-de-texto" href="#">
@@ -52,11 +54,14 @@
           </a>
               
           <form>
-            <input class="caixa-de-texto" type="text" id="usuario" name="usuario" placeholder="Usuário" required> 
-            <input class="caixa-de-texto" type="password" id="senha" name="password" placeholder="Senha" required>
+            <!-- <label id="labelUsuarioLogin" for="usuarioLogin"></label> -->
+            <input class="caixa-de-texto" type="text" id="usuarioLogin" name="usuarioLogin" placeholder="Usuário" required> 
+
+            <!-- <label id="labelSenhaLogin" for="senhaLogin"></label> -->
+            <input class="caixa-de-texto" type="password" id="senhaLogin" name="senhaLogin" placeholder="Senha" required>
             <i id="verSenha" class="far fa-eye icone"></i>
           </form>
-          <a class="botao botao--enviar" href="#">Fazer login</a>
+          <a onclick="login()" class="botao botao--enviar" href="#">Fazer login</a>
           <a href="#">
             <p class="texto-pequeno">ou <b>Esqueci a Senha</b></p>
           </a>
@@ -66,7 +71,7 @@
 
   </main>
   <script src="assets/js/loader.js"></script>
-  <script src="assets/js/acesso.js"></script>
+  <script src="assets/js/login.js"></script>
 </body>
 
 </html>
