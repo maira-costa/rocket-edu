@@ -143,11 +143,6 @@
   display: block;
 }
 
-/* .menu__item:focus-within > .subMenu,
-.menu__item:hover > .subMenu {
-  display: initial;
-} */
-
 .menu__item.active > .subMenu {
   display: initial;
 }
@@ -156,52 +151,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
-
-.menu__form {
-  margin-right: 1rem;
-}
-
-.form__busca {
-  position: relative;
-  /* width: 5rem; */
-}
-
-.form__busca > input {
-  visibility: hidden;
-  background-color: transparent;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  outline: 0;
-  /* padding: 1em 1em 1em 3.5em; */
-  padding: 1em;
-  padding-right: 2.5rem;
-  height: 45px;
-  width: 45px;
-  transition: all .5s ease-in-out;
-}
-
-.form__busca > button {
-  background-color: transparent;
-  border: none;
-  color: var(--cor-roxa);
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.menu__form:focus-within > .form__busca > input {
-  width: 10rem;
-  visibility: visible;
-}
-
-.menu__form:focus-within > .form__busca > button {
-  color: #313131;
-  opacity: 0.5;
 }
 
 .menu__item--acesso > .item__link {
@@ -220,14 +169,36 @@
 
 .usuario {
   display: flex;
+  align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
+  margin-right: 1.5rem;
+}
+
+.wrapp-infoUser {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-right: 1rem;
+}
+
+.iconeUser {
+  color: var(--cor-roxa);
+} 
+
+.iconeCoins {
+  color: #ecb44b;
 }
 
 .infoUser {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   display: block;
   font: 400 1rem "DM Sans", sans-serif;
   color: #313131;
+}
+
+.botao--sair > i {
+  margin-right: 0.5rem;
 }
 
 @media screen and (min-width:963px) {
@@ -237,7 +208,6 @@
   }
 
   .container--header {
-    justify-content: space-between;
     gap: 1.5rem;
   }
 
@@ -262,9 +232,7 @@
     position: initial;
     visibility: visible;
     overflow: initial;
-
-
-    width: 54rem;
+    gap: 2rem;
   }
 
   #btn-mobile {
@@ -361,31 +329,6 @@
     color: var(--cor-branca);
   }
 
-  .menu__form {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 14rem;
-  }
-
-  .form__busca > input::placeholder {
-    color: #313131;
-    font: 400 1.125rem "DM Sans", sans-serif;
-    opacity: 0.5;
-  }
-  
-  .menu__form:focus-within > .form__busca > input, 
-  .menu__form:hover > .form__busca > input {
-    width: 15rem;
-    visibility: visible;
-  }
-  
-  .menu__form:focus-within > .form__busca > button,
-  .menu__form:hover > .form__busca > button {
-    color: #313131;
-    opacity: 0.5;
-  }
-
   .menu__item > .botao--acesso {
     align-items: center;
     background-color: var(--cor-roxa);
@@ -405,6 +348,10 @@
     transform: translateY(-3px);  
   }
 
+  .usuario {
+    margin-top: 0;
+  }
+
   .infoUser {
     margin-top: 0;
     display: block;
@@ -414,5 +361,8 @@
 
   .menu__item > .botao--sair {
     padding: 0.5rem 1rem;
+    background-color: var(--cor-roxa);
+    border-radius: 10px;
+    color: var(--cor-branca);
   }
 }

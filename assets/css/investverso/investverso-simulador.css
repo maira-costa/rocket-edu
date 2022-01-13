@@ -6,6 +6,12 @@ main {
     padding: 3rem 0;
 }
 
+.texto_construcao{
+    margin-top: 1rem;
+    text-align: center;
+    font: 700 1.5rem "DM Sans", sans-serif;
+    color: var(--cor-roxa);
+}
 
 
 @media screen and (min-width:963px) {
@@ -30,10 +36,7 @@ main {
     }
     
     .texto_construcao{
-        margin-top: 1rem;
-        text-align: center;
-        font: 700 2rem "DM Sans", sans-serif;
-        color: var(--cor-roxa);
+        font-size: 2rem;
     }
     
 }

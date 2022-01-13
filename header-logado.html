@@ -6,12 +6,6 @@
     </div>
     <nav class="nav" id="nav">
       <div class="menuMobile">
-        <div class="menu__form">
-          <form class="form__busca" action="#">
-            <input type="search" class="input-search" placeholder="Busca..." required>
-            <button type="submit" class="fas fa-search"></button>
-          </form>
-        </div>
         <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
           <span id="hamburger"></span>
         </button>
@@ -45,11 +39,17 @@
         </ul>
         <ul class="menu__itens menu__itens--acesso">
           <li class="menu__item menu__item--acesso usuario">     
-            <p id="usuarioLogado" class="infoUser"></p>
-            <p id="rocketcoins" class="infoUser"></p>
+            <div class="wrapp-infoUser">
+              <i class="fas fa-user-astronaut iconeUser"></i>
+              <p id="usuarioLogado" class="infoUser"></p>
+            </div>
+            <div class="wrapp-infoUser">
+              <i class="fas fa-coins iconeCoins"></i>
+              <p id="rocketcoins" class="infoUser"></p>
+            </div>
           </li>
           <li class="menu__item menu__item--acesso"><a  onclick="sair()" class="botao botao--sair"
-            href="#">Sair</a></li>
+            href="#"><i class="fas fa-sign-out-alt"></i>Sair</a></li>
         </ul>
       </div>
     </nav>

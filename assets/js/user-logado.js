@@ -3,7 +3,7 @@
 let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 
 let logado = document.querySelector('#usuarioLogado')
-logado.innerHTML = `Olá, ${userLogado.nome}!`
+logado.innerHTML = `${userLogado.user}`
 
 let rocketcoins = document.querySelector('#rocketcoins')
-rocketcoins.innerHTML = `R&#8373; ${userLogado.rocketcoins}`
+rocketcoins.innerHTML = `${userLogado.rocketcoins}`
