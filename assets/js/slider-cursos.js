@@ -14,15 +14,16 @@ document.querySelector("#items")
 new Glide(".cursos",{
   type:'carousel',
   hoverPause: true,
-  autoPlay: 1000,
   perView: 4,  
   gap: 40,
   autoplay: 4000,
   hoverpause:true,
+  // peek: 120,
   
   breakpoints:{
     960:{
       perView: 3
+      
     },
     500:{
       perView: 1.3
