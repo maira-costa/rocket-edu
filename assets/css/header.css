@@ -78,7 +78,7 @@
   height: 2px;
   background: var(--cor-roxa);
   margin-top: 5px;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s;
   position: relative;
 }
 
@@ -171,8 +171,15 @@
 .perfilUsuario {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
 }
+
+/* .usuario {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-right: 1.5rem;
+} */
 
 .wrapp-infoUser {
   display: flex;
@@ -370,10 +377,6 @@
 
   .menu__item > .botao--acesso:hover {
     transform: translateY(-3px);  
-  }
-
-  .perfilUsuario {
-    margin-top: 0;
   }
 
   .usuario {

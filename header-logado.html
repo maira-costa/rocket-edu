@@ -74,8 +74,8 @@
   let usuarioLogado = JSON.parse(localStorage.getItem('userLogado'))
   let rocketcoinsUsuario = document.querySelector('#rocketcoins')
   rocketcoinsUsuario.innerHTML = `${usuarioLogado.rocketcoins}`
-  let countRocketcoins
   var player
+  let countRocketcoins
 
   //contador de rocketcoins inicia com valor que está armazenado no localStorage
   listaUsuarios.forEach((item) => {
@@ -83,6 +83,8 @@
         countRocketcoins = item.rocketcoins
       }
   })
+
+
 
   //API Iframe do Youtube checa estado do player
   function onYouTubeIframeAPIReady() {
