@@ -75,9 +75,18 @@
   let rocketcoinsUsuario = document.querySelector('#rocketcoins')
   rocketcoinsUsuario.innerHTML = `${usuarioLogado.rocketcoins}`
   var player
-  let countRocketcoins = 0
+  let countRocketcoins
 
-  //API Iframe do Youtube para checar estado do player
+  //contador de rocketcoins inicia com valor que está armazenado no localStorage
+  listaUsuarios.forEach((item) => {
+      if(usuarioLogado.nome == item.nomeCad) {
+        countRocketcoins = item.rocketcoins
+      }
+  })
+
+
+
+  //API Iframe do Youtube checa estado do player
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
       events: { onStateChange: onPlayerStateChange }
@@ -85,13 +94,13 @@
   }
 
  //API Iframe checa se o vídeo foi finalizado e é acrescentado valor em rocketcoins à carteira do usuário
-
   function onPlayerStateChange(event) {
     
     if (event.data == 0) {
       countRocketcoins += 100 
 
       alert(`Você conquistou ${countRocketcoins} rocketCOINS`)
+
       listaUsuarios.forEach((item) => {
           if(usuarioLogado.nome == item.nomeCad) {
             item.rocketcoins = countRocketcoins
@@ -99,6 +108,7 @@
             rocketcoinsUsuario.innerHTML = item.rocketcoins
           }
       })
+      
       localStorage.setItem("listaUser", JSON.stringify(listaUsuarios))
       localStorage.setItem("userLogado", JSON.stringify(usuarioLogado))
       rocketcoinsUsuario.innerHTML = `${userLogado.rocketcoins}`
