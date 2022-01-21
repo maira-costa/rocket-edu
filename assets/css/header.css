@@ -167,13 +167,19 @@
   padding: 0;
 }
 
-.usuario {
+/*---- MENU HEADER USUÁRIO LOGADO ----*/
+.perfilUsuario {
+  display: flex;
+  align-items: center;
+}
+
+/* .usuario {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
   margin-right: 1.5rem;
-}
+} */
 
 .wrapp-infoUser {
   display: flex;
@@ -182,23 +188,48 @@
   margin-right: 1rem;
 }
 
-.iconeUser {
-  color: var(--cor-roxa);
-} 
-
-.iconeCoins {
-  color: #ecb44b;
+.wrapp-infoUser > button {
+  display: flex;
+  align-items: center;
 }
 
+.usuario__img {
+  aspect-ratio: 1;
+  width: 35px;
+} 
+
 .infoUser {
-  /* margin-top: 2rem; */
   display: block;
   font: 400 1rem "DM Sans", sans-serif;
   color: #313131;
 }
 
-.botao--sair > i {
+.usuario__categoria {
+  font: 700 0.875rem "DM Sans", sans-serif;
+  color: var(--cor-roxa);
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #ECE9E9;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.subMenu--perfilUsuario > .subMenu__item {
+  display: flex;
+}
+
+.subMenu--perfilUsuario > .subMenu__item:nth-child(2) {
+  margin-top: 1rem;
+}
+
+.subMenu__item .icones-usuario {
+  width: 1rem;
   margin-right: 0.5rem;
+}
+
+.iconeCoins {
+  color: #ecb44b;
 }
 
 @media screen and (min-width:963px) {
@@ -359,10 +390,8 @@
     color: #313131;
   }
 
-  .menu__item > .botao--sair {
-    padding: 0.5rem 1rem;
-    background-color: var(--cor-roxa);
-    border-radius: 10px;
-    color: var(--cor-branca);
+  .usuario__img {
+    width: 50px;
+    margin-right: 1rem;
   }
 }

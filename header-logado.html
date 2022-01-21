@@ -37,25 +37,75 @@
             </ul>
           </li>
         </ul>
-        <ul class="menu__itens menu__itens--acesso">
-          <li class="menu__item menu__item--acesso usuario">     
-            <div class="wrapp-infoUser">
-              <i class="fas fa-user-astronaut iconeUser"></i>
-              <p id="usuarioLogado" class="infoUser"></p>
+        <div class="menu__itens menu__itens--acesso">
+          <div class="menu__item menu__item--acesso usuario" data-dropdown>     
+            <div class="perfilUsuario">
+              <div class="wrapp-infoUser" >
+                <img src="assets/img/user/user-avatar.svg" alt="" class="usuario__img">
+                <button class="item__link item__link--plataformas" data-dropdown-button><div id="usuarioLogado" class="infoUser" data-dropdown-button></div><i
+                  class="fas fa-chevron-down" data-dropdown-button></i></button>
+              </div>
+              <div class="wrapp-infoUser">
+                <i class="fas fa-coins iconeCoins" title="rocketcoins"></i>
+                <p id="rocketcoins" class="infoUser"></p>
+              </div>
             </div>
-            <div class="wrapp-infoUser">
-              <i class="fas fa-coins iconeCoins"></i>
-              <p id="rocketcoins" class="infoUser"></p>
-            </div>
-          </li>
-          <li class="menu__item menu__item--acesso"><a  onclick="sair()" class="botao botao--sair"
-            href="#"><i class="fas fa-sign-out-alt"></i>Sair</a></li>
-        </ul>
+            <ul class="subMenu subMenu--perfilUsuario">
+              <p class="usuario__categoria">Estudante</p>
+              <li class="subMenu__item"><a class="subMenu__link" href="#"><i class="far fa-user icones-usuario"></i>Meu perfil</a></li>
+              <li class="subMenu__item"><a class="subMenu__link" href="#"><i class="fas fa-graduation-cap icones-usuario"></i>Cursos e certificados</a>
+              </li>
+              <li class="subMenu__item"><a class="subMenu__link" href="#"><i class="fas fa-wallet icones-usuario"></i>Minha carteira</a></li>
+              <li class="subMenu__item"><a  onclick="sair()" class="subMenu__link"
+                href="#"><i class="fas fa-sign-out-alt icones-usuario"></i>Sair</a></li>
+            </ul>            
+          </div>
+        </div>
       </div>
     </nav>
   </div>
 </header>
 
 <script src="assets/js/header.js"></script>
-<script src="assets/js/user-logado.js"></script>
+<script src="assets/js/user-logado.js" type="module"></script>
+<script>
+  //contabilização de rocketcoins e adição de valores ao perfil do usuário
+  let listaUsuarios = JSON.parse(localStorage.getItem('listaUser'))
+  let usuarioLogado = JSON.parse(localStorage.getItem('userLogado'))
+  let rocketcoinsUsuario = document.querySelector('#rocketcoins')
+  rocketcoinsUsuario.innerHTML = `${usuarioLogado.rocketcoins}`
+  var player
+  let countRocketcoins = 0
+
+  //API Iframe do Youtube para checar estado do player
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      events: { onStateChange: onPlayerStateChange }
+    })
+  }
+
+ //API Iframe checa se o vídeo foi finalizado e é acrescentado valor em rocketcoins à carteira do usuário
+
+  function onPlayerStateChange(event) {
+    
+    if (event.data == 0) {
+      countRocketcoins += 100 
+
+      alert(`Você conquistou ${countRocketcoins} rocketCOINS`)
+      listaUsuarios.forEach((item) => {
+          if(usuarioLogado.nome == item.nomeCad) {
+            item.rocketcoins = countRocketcoins
+            usuarioLogado.rocketcoins = item.rocketcoins
+            rocketcoinsUsuario.innerHTML = item.rocketcoins
+          }
+      })
+      localStorage.setItem("listaUser", JSON.stringify(listaUsuarios))
+      localStorage.setItem("userLogado", JSON.stringify(usuarioLogado))
+      rocketcoinsUsuario.innerHTML = `${userLogado.rocketcoins}`
+    }
+    
+  }
+
+  
+</script>
 <script src="assets/js/sair.js"></script>

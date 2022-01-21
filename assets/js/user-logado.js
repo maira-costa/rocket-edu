@@ -1,9 +1,8 @@
-//Mostrar informações do usuário logado no header
+//Mostrar nome do usuário logado no header
+
 
 let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 
 let logado = document.querySelector('#usuarioLogado')
-logado.innerHTML = `${userLogado.user}`
+logado.innerHTML = `${userLogado.nome}`
 
-let rocketcoins = document.querySelector('#rocketcoins')
-rocketcoins.innerHTML = `${userLogado.rocketcoins}`

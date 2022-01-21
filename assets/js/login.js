@@ -14,10 +14,9 @@ btnSenha.addEventListener('click', ()=>{
 //Fazer login
 
 function login() {
-    // let labelUsuarioLogin = document.querySelector('#labelUsuarioLogin')
+    
     let usuarioLogin = document.querySelector('#usuarioLogin')
 
-    // let labelSenhaLogin = document.querySelector('#labelSenhaLogin')
     let senhaLogin = document.querySelector('#senhaLogin')
 
     let msgError = document.querySelector('#msgError')
@@ -35,12 +34,12 @@ function login() {
     listaUser.forEach((item) => {
         if(usuarioLogin.value == item.userCad && senhaLogin.value == item.senhaCad){
         
-        userValid = {
-            nome: item.nomeCad,
-            user: item.userCad,
-            senha: item.senhaCad,
-            rocketcoins: item.rocketcoins
-        }
+            userValid = {
+                nome: item.nomeCad,
+                user: item.userCad,
+                senha: item.senhaCad,
+                rocketcoins: item.rocketcoins
+            }
         
         }
     })  

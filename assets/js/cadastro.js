@@ -101,7 +101,7 @@ function cadastrar(){
             nomeCad: nome.value,
             userCad: usuario.value,
             senhaCad: senha.value,
-            rocketcoins: "0"
+            rocketcoins: 0
         }
         )
         

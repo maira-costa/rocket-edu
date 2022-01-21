@@ -33,6 +33,7 @@
   background-color: var(--cor-cinza-claro);
   color: var(--cor-cinza); 
   display: block;
+  outline: none;
 }
 
 form {
@@ -42,15 +43,19 @@ form {
 }
 
 .botao-customizado {
-  /* display: flex;
-  justify-content: center; */
-  /* gap: 1rem; */
   text-align: center;
   font: 500 0.875rem "DM Sans", sans-serif;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
-.card > .botao {
+
+.card > .botao--enviar {
   width: 100%;
+  border: none;
+  cursor: pointer;
 }
 
 label {
