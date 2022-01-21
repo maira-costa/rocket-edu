@@ -9,16 +9,16 @@
 @media screen and (min-width:963px) {
   .glide__arrow {
     display: block;
-    top: 18rem;
+    top: 20rem;
     color: var(--cor-branca);
     border: none;
     border-radius: 10px;
     background-color: #3c00717e;
   }
 
-  .glide__arrow--jogos {
+  /* .glide__arrow--jogos {
     top: 20rem;
-  }
+  } */
 
   .glide__arrow--left {
     margin-left: 42%;

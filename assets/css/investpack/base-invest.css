@@ -42,12 +42,13 @@ font: 700 2.5rem "Poppins", sans-serif;
 .subtitulo__invest--todos{
   font: 700 1.125rem "DM Sans", sans-serif;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #9145B6 ;
+  border-bottom: 1px solid #9145B6;
+  height: 100%;
 }
 
 .conteudo__invest--populares {
   width: 15rem;
-  height: 16rem;
+  height: 18rem;
   margin-bottom: 4rem;
   background-image: linear-gradient(180deg, #9145B6 0%, #4C3F91 100%);  
   padding: 1rem;
@@ -65,19 +66,33 @@ font: 700 2.5rem "Poppins", sans-serif;
   border-bottom: 1px solid #9145B6 ;
 }
 
-.avaliacao{
-  width: 91px;
-  height: 21px;
+.nome__card {
+  font: 700 1rem "DM Sans", sans-serif;
+  color: var(--cor-cinza-claro-titulo-invest);
+  margin-top: 0.5rem;
 }
 
+.estrelas {
+ margin-top: 1rem;
+}
 
+.estrelas--glide {
+  width: 100%;
+  margin-top: 0.5rem;
+  display: inline-block;
+  text-align: right;
+}
+
+.estrela {
+  font-size: 0.8rem;
+  color: #ecb44b;
+}
 
 @media screen and (min-width:963px){
   .texto_banner--menor{
     font-size: 2rem;
   }
 
-  
   .banner_invest{
     margin-top: 6.30rem;
   }
@@ -92,5 +107,8 @@ font: 700 2.5rem "Poppins", sans-serif;
     justify-content: left;      
   }
   
+  .conteudo__invest--jogos{  
+    align-items: center;     
+  }
 }
 
