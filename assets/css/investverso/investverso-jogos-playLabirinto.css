@@ -1,0 +1,59 @@
+.capa__jogo--todos{
+  width: 100%;
+  height: auto;
+}
+
+.conteudo__invest--todos--jogos{
+  display: inline;
+  
+}
+.conteudo__invest--populares {
+  height: 18rem;
+}
+
+.capa__jogo--populares{
+  width: 100%;
+  height: auto;
+}
+.descricao_jogo{
+  font: 400 0.9rem "DM Sans", sans-serif;
+  width: 100%;
+  color: var(--cor-branca);
+} 
+
+
+.descricao_jogo--todos{
+  color: var(--cor-cinza);  
+  width: 100%;
+  font: 400 0.9rem "DM Sans", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.nome_do_jogo {
+  margin-top: 1.5rem;
+  font: 700 1rem "DM Sans", sans-serif;
+  margin-bottom: 0.5rem;
+  color: var(--cor-cinza-claro-titulo-invest);
+
+}
+
+.nome_do_jogo--todos{
+  color: var(--cor-cinza);
+}
+
+.avaliacao{
+  width: 91px;
+  height: 21px;
+}
+
+@media screen and (min-width:963px){
+  .capa__jogo--todos{
+    width: 18rem;
+    height: 10rem;
+  }
+  .texto_jogo{
+    width: 50%;
+  }
+
+
+}
