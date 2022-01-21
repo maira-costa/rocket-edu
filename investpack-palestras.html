@@ -1,258 +1,422 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InvestPACK - Palestras</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/rocket_edu_logo.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InvestPACK - Palestras</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/rocket_edu_logo.png"
+    />
 
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/container.css">
-  <link rel="stylesheet" href="assets/css/pular-navegacao.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/container.css" />
+    <link rel="stylesheet" href="assets/css/pular-navegacao.css" />
 
-  <link rel="stylesheet" href="assets/css/header.css">
-  <link rel="stylesheet" href="assets/css/home/botao.css">
-  <link rel="stylesheet" href="assets/css/busca.css">
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/home/botao.css" />
+    <link rel="stylesheet" href="assets/css/busca.css" />
 
-  <link rel="stylesheet" href="assets/css/investpack/glide.core.min.css">
-  <link rel="stylesheet" href="assets/css/investpack/glide.theme.min.css">
-  <link rel="stylesheet" href="assets/css/investpack/base-invest.css">
-  <link rel="stylesheet" href="assets/css/investpack/slider.css">
-  <link rel="stylesheet" href="assets/css/investpack/investpack-palestras.css">
-  
-  <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/investpack/glide.core.min.css" />
+    <link rel="stylesheet" href="assets/css/investpack/glide.theme.min.css" />
+    <link rel="stylesheet" href="assets/css/investpack/base-invest.css" />
+    <link rel="stylesheet" href="assets/css/investpack/slider.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/investpack/investpack-palestras.css"
+    />
 
-  <!--Fontes-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/footer.css" />
 
-  <!--Ícones-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-  <a class="pularNavegacao" href="#conteudoPrincipal">Pular para conteúdo principal</a> <!--Recurso de Acessibilidade-->
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
 
-  <div id="header-logado"></div>
-  <main>    
-    <section class="banner_invest">
-      <div>
-        <h1 class="texto_banner">InvestPACK</h1>
-        <h2 class="texto_banner--menor">Palestras</h2>
-      </div>
-    </section>
-    <section class="secao secao--populares" >
-      <div class="container container--invest">
-        <div class="form-wrapper">
-          <div class="menu__form">
-            <form class="form__busca" action="#">
-              <input type="search" class="input-search" placeholder="Buscar palestra..." required>
-              <button type="submit" class="fas fa-search"></button>
-            </form>
-          </div>
+    <!--Ícones-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <a class="pularNavegacao" href="#conteudoPrincipal"
+      >Pular para conteúdo principal</a
+    >
+    <!--Recurso de Acessibilidade-->
+
+    <div id="header-logado"></div>
+    <main>
+      <section class="banner_invest">
+        <div>
+          <h2 class="texto_banner">InvestPACK</h2>
+          <h2 class="texto_banner--menor">Palestras</h2>
         </div>
-        <h2 class="titulo--invest">
-          Palestras
-        </h2>
-        <h2 class="subtitulo__invest--populares">Mais populares</h2>
-        <div class="cursos glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="conteudo__invest--populares glide__slide">
-                <iframe class="video__palestra--populares" width="560" height="315" src="https://www.youtube.com/embed/llzOggL1xUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              
-                <h3 class="nome__card">Como funciona o mercado financeiro</h3>
-                <p class="palestrante">Clube do Valor</p>
-                <div class="estrelas estrelas--glide">
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star-half-alt estrela"></i>
-                      </div>                 
-              </li>
-              <li class="conteudo__invest--populares glide__slide">
-                <iframe class="video__palestra--populares" width="560" height="315" src="https://www.youtube.com/embed/xtuTCF3_b9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3 class="nome__card">Primeiros passos: como investir</h3>
-                <p class="palestrante">ANBIMA</p>
-                <div class="estrelas estrelas--glide">
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star-half-alt estrela"></i>
-                      </div>                 
-              </li>
-              <li class="conteudo__invest--populares glide__slide">
-                <iframe class="video__palestra--populares" width="560" height="315" src="https://www.youtube.com/embed/xtuTCF3_b9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3 class="nome__card">Primeiros passos: como investir</h3>
-                <p class="palestrante">ANBIMA</p>
-                <div class="estrelas estrelas--glide">
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star-half-alt estrela"></i>
-                      </div>                  
-              </li>
-              <li class="conteudo__invest--populares glide__slide">
-                <iframe class="video__palestra--populares" width="560" height="315" src="https://www.youtube.com/embed/QgQlYNLel-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3 class="nome__card">Investimentos: faça seu dinheiro trabalhar para você</h3>
-                <p class="palestrante">ANBIMA</p>
-                <div class="estrelas estrelas--glide">
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star-half-alt estrela"></i>
-                      </div>                   
-              </li>
-              <li class="conteudo__invest--populares glide__slide">
-                <iframe class="video__palestra--populares" width="560" height="315" src="https://www.youtube.com/embed/3VUKXELpD4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3 class="nome__card">Planejamento financeiro: o caminho para chegar até o seu sonho</h3>
-                <p class="palestrante">ANBIMA</p>
-                <div class="estrelas estrelas--glide">
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star-half-alt estrela"></i>
-                      </div>                 
-              </li>
-              <li class="conteudo__invest--populares glide__slide">
-                <iframe class="video__palestra--populares" width="560" height="315" src="https://www.youtube.com/embed/3VUKXELpD4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <h3 class="nome__card">Planejamento financeiro: o caminho para chegar até o seu sonho</h3>
-              <p class="palestrante">ANBIMA</p>
-              <div class="estrelas estrelas--glide">
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star-half-alt estrela"></i>
-                      </div>                 
-              </li>
-              <li class="conteudo__invest--populares glide__slide">
-                <iframe class="video__palestra--populares" width="560" height="315" src="https://www.youtube.com/embed/3VUKXELpD4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3 class="nome__card">Planejamento financeiro: o caminho para chegar até o seu sonho</h3>
-                <p class="palestrante">ANBIMA</p>
-                <div class="estrelas estrelas--glide">
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star-half-alt estrela"></i>
-                      </div>                  
-              </li>
-              <li class="conteudo__invest--populares glide__slide">
-                <iframe class="video__palestra--populares" width="560" height="315" src="https://www.youtube.com/embed/3VUKXELpD4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3 class="nome__card">Planejamento financeiro: o caminho para chegar até o seu sonho</h3>
-                <p class="palestrante">ANBIMA</p>
-                <div class="estrelas estrelas--glide">
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star estrela"></i>
-                        <i class="fas fa-star-half-alt estrela"></i>
-                      </div>                
-              </li>
-            </ul>
-            <div class="glide__arrows" data-glide-el="controls">
-              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+      </section>
+      <section class="secao secao--populares">
+        <div class="container container--invest">
+          <div class="form-wrapper">
+            <div class="menu__form">
+              <form class="form__busca" action="#">
+                <input
+                  type="search"
+                  class="input-search"
+                  placeholder="Buscar palestra..."
+                  required
+                />
+                <button type="submit" class="fas fa-search"></button>
+              </form>
             </div>
           </div>
-        </div>       
-      </div>  
-    </section>      
-    <section class="secao secao--todosPalestras">      
-      <div class="container">
-        <h2 class="subtitulo subtitulo__invest--todos">Todas as Palestras</h2>
-        <div class="palestras--todos">
-          <div class="conteudo__invest--todos">
-            <iframe class="video__palestra" id="player" width="560" height="315" src="https://www.youtube.com/embed/PB9oySq0gSA?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>              
-            </iframe>
-            <div class="texto__palestra--todos">
-              <h3 class="nome_da_palestra nome_da_palestra--todos">O Jogo Interior do Trader</h3>
-              <p class="palestrante palestrante--todos">Guilherme Cardoso</p>
-              <div class="estrelas">
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star-half-alt estrela"></i>
-              </div> 
-            </div>  
-          </div>      
-          <div class="conteudo__invest--todos">
-            <iframe class="video__palestra"  width="560" height="315" src="https://www.youtube.com/embed/RqfaJkcSqWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="texto__palestra--todos">
-              <h3 class="nome_da_palestra nome_da_palestra--todos">Renda variável: o mercado de ações</h3>
-              <p class="palestrante palestrante--todos">ANBIMA</p>
-              <div class="estrelas">
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star-half-alt estrela"></i>
-              </div> 
-            </div>            
+          <h1 class="titulo--invest">Palestras</h1>
+          <h2 class="subtitulo__invest--populares">Mais populares</h2>
+          <div class="cursos glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="conteudo__invest--populares glide__slide">
+                  <iframe
+                    class="video__palestra--populares"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/jXztjivu1G4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <h3 class="nome__card">
+                    Investimentos para cada fase da vida
+                  </h3>
+                  <p class="palestrante">Gustavo Cerbasi</p>
+                  <div class="estrelas estrelas--glide">
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star-half-alt estrela"></i>
+                  </div>
+                </li>
+                <li class="conteudo__invest--populares glide__slide">
+                  <iframe
+                    class="video__palestra--populares"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/xtuTCF3_b9Q"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <h3 class="nome__card">Primeiros passos: como investir</h3>
+                  <p class="palestrante">ANBIMA</p>
+                  <div class="estrelas estrelas--glide">
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star-half-alt estrela"></i>
+                  </div>
+                </li>
+                <li class="conteudo__invest--populares glide__slide">
+                  <iframe
+                    class="video__palestra--populares"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/2QvvmLMxCxU"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <h3 class="nome__card">O Guia Básico em Bolsa de Valores</h3>
+                  <p class="palestrante">O Primo Rico</p>
+                  <div class="estrelas estrelas--glide">
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star-half-alt estrela"></i>
+                  </div>
+                </li>
+                <li class="conteudo__invest--populares glide__slide">
+                  <iframe
+                    class="video__palestra--populares"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/QgQlYNLel-U"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <h3 class="nome__card">
+                    Investimentos: faça seu dinheiro trabalhar para você
+                  </h3>
+                  <p class="palestrante">ANBIMA</p>
+                  <div class="estrelas estrelas--glide">
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star-half-alt estrela"></i>
+                  </div>
+                </li>
+                <li class="conteudo__invest--populares glide__slide">
+                  <iframe
+                    class="video__palestra--populares"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/3VUKXELpD4U"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <h3 class="nome__card">
+                    Planejamento financeiro: o caminho para chegar até o seu
+                    sonho
+                  </h3>
+                  <p class="palestrante">ANBIMA</p>
+                  <div class="estrelas estrelas--glide">
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star-half-alt estrela"></i>
+                  </div>
+                </li>
+                <li class="conteudo__invest--populares glide__slide">
+                  <iframe
+                    class="video__palestra--populares"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/3nkBhtICRdk"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <h3 class="nome__card">Organização financeira para 2022</h3>
+                  <p class="palestrante">Nath Finanças</p>
+                  <div class="estrelas estrelas--glide">
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star-half-alt estrela"></i>
+                  </div>
+                </li>
+                <li class="conteudo__invest--populares glide__slide">
+                  <iframe
+                    class="video__palestra--populares"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/MMxs6HBXXNM"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <h3 class="nome__card">Investimentos Inteligentes</h3>
+                  <p class="palestrante">O Primo Rico</p>
+                  <div class="estrelas estrelas--glide">
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star-half-alt estrela"></i>
+                  </div>
+                </li>
+                <li class="conteudo__invest--populares glide__slide">
+                  <iframe
+                    class="video__palestra--populares"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/jXztjivu1G4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <h3 class="nome__card">Planejamento financeiro</h3>
+                  <p class="palestrante">Gustavo Cerbassi</p>
+                  <div class="estrelas estrelas--glide">
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star estrela"></i>
+                    <i class="fas fa-star-half-alt estrela"></i>
+                  </div>
+                </li>
+              </ul>
+              <div class="glide__arrows" data-glide-el="controls">
+                <button
+                  class="glide__arrow glide__arrow--left"
+                  data-glide-dir="<"
+                >
+                  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button
+                  class="glide__arrow glide__arrow--right"
+                  data-glide-dir=">"
+                >
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="conteudo__invest--todos">
-            <iframe class="video__palestra" width="560" height="315" src="https://www.youtube.com/embed/u-vkgqKW5QU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="texto__palestra--todos">
-              <h3 class="nome_da_palestra nome_da_palestra--todos">10 passos para analisar ações</h3>
-              <p class="palestrante palestrante--todos">O Primo Rico</p>
-              <div class="estrelas">
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star-half-alt estrela"></i>
-              </div> 
-            </div>            
+        </div>
+      </section>
+      <section class="secao secao--todosPalestras">
+        <div class="container">
+          <h2 class="subtitulo subtitulo__invest--todos">Todas as Palestras</h2>
+          <div class="palestras--todos">
+            <div class="conteudo__invest--todos">
+              <iframe
+                class="video__palestra"
+                id="player"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/dJyJ77GkhBE?enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+              <div class="texto__palestra--todos">
+                <h3 class="nome_da_palestra nome_da_palestra--todos">
+                  O Guia BÁSICO para começar a INVESTIR com POUCO DINHEIRO! 
+                </h3>
+                <p class="palestrante palestrante--todos">O Primo Rico</p>
+                <div class="estrelas">
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star-half-alt estrela"></i>
+                </div>
+              </div>
+            </div>
+            <div class="conteudo__invest--todos">
+              <iframe
+                class="video__palestra"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RqfaJkcSqWc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="texto__palestra--todos">
+                <h3 class="nome_da_palestra nome_da_palestra--todos">
+                  O Jogo Interior do Trader
+                </h3>
+                <p class="palestrante palestrante--todos">Guilherme Cardoso</p>
+                <div class="estrelas">
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star-half-alt estrela"></i>
+                </div>
+              </div>
+            </div>
+            <div class="conteudo__invest--todos">
+              <iframe
+                class="video__palestra"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/u-vkgqKW5QU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="texto__palestra--todos">
+                <h3 class="nome_da_palestra nome_da_palestra--todos">
+                  10 passos para analisar ações
+                </h3>
+                <p class="palestrante palestrante--todos">O Primo Rico</p>
+                <div class="estrelas">
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star-half-alt estrela"></i>
+                </div>
+              </div>
+            </div>
+            <div class="conteudo__invest--todos">
+              <iframe
+                class="video__palestra"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/71WEvV8s46k"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="texto__palestra--todos">
+                <h3 class="nome_da_palestra nome_da_palestra--todos">
+                  TESOURO DIRETO: 5 PASSOS PRÁTICOS pra investir todo mês!
+                </h3>
+                <p class="palestrante palestrante--todos">Me Poupe!</p>
+                <div class="estrelas">
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star-half-alt estrela"></i>
+                </div>
+              </div>
+            </div>
+            <div class="conteudo__invest--todos">
+              <iframe
+                class="video__palestra"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/llzOggL1xUI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="texto__palestra--todos">
+                <h3 class="nome_da_palestra nome_da_palestra--todos">
+                  Como funciona o mercado financeiro
+                </h3>
+                <p class="palestrante palestrante--todos">Clube do Valor</p>
+                <div class="estrelas">
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star estrela"></i>
+                  <i class="fas fa-star-half-alt estrela"></i>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="conteudo__invest--todos">
-            <iframe class="video__palestra" width="560" height="315" src="https://www.youtube.com/embed/3VUKXELpD4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="texto__palestra--todos">
-              <h3 class="nome_da_palestra nome_da_palestra--todos">Planejamento financeiro: o caminho para chegar até o seu sonho</h3>
-              <p class="palestrante palestrante--todos">ANBIMA</p>
-              <div class="estrelas">
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star estrela"></i>
-                <i class="fas fa-star-half-alt estrela"></i>
-              </div> 
-            </div>            
-          </div>
-          <div class="conteudo__invest--todos">
-            <iframe class="video__palestra" width="560" height="315" src="https://www.youtube.com/embed/llzOggL1xUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="texto__palestra--todos">
-              <h3 class="nome_da_palestra nome_da_palestra--todos">Como funciona o mercado financeiro</h3>
-              <p class="palestrante palestrante--todos">Clube do Valor</p>
-              <div class="estrelas">
-                      <i class="fas fa-star estrela"></i>
-                      <i class="fas fa-star estrela"></i>
-                      <i class="fas fa-star estrela"></i>
-                      <i class="fas fa-star estrela"></i>
-                      <i class="fas fa-star-half-alt estrela"></i>
-                    </div> 
-            </div>            
-          </div>                     
-        </div>          
-      </div>  
-    </section>
-  </main>
+        </div>
+      </section>
+    </main>
 
-  <div id="footer"></div>
+    <div id="footer"></div>
 
-  <script src="assets/js/negar-acesso.js"></script>
-  <script src="assets/js/loader.js"></script>
-  <script src="assets/js/glide.min.js"></script>
-  <script src="assets/js/slider-cursos.js"></script>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <!-- <script src="assets/js/teste.js"></script> -->
-</body>
-</html>  
+    <script src="assets/js/negar-acesso.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/glide.min.js"></script>
+    <script src="assets/js/slider-cursos.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- <script src="assets/js/teste.js"></script> -->
+  </body>
+</html>
