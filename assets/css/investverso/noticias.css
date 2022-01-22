@@ -1,97 +1,232 @@
-.noticias{
-    margin: 1rem 0 2rem;
+.categoria__noticias {
+  margin-top: 3rem;
 }
 
-.conteudo__itens{
+.titulo--noticias {
+  font-size: 1.75rem;
+  border-left: 4px solid var(--cor-roxa);
+  padding-left: .75rem;
+}
+
+
+.noticias__wrapp {
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
-}
-
-.conteudo__invest--todos {
-  display: flex;
   gap: 1rem;
 }
 
-.capa__noticias--todos{
-  width: 120px;
-  height: 67px;
+.noticia__destaque {
+  display: block;
+  
 }
 
-.titulo__noticia {
+.noticia__capa {
+  width: 100%;
+  height: 10rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  transition: all .5s;
+}
+
+.noticia__capa--principal{
+  background-image: url(/assets/img/investverso-noticias.img/tecmundo-g.png);
+}
+
+.noticia__capa--secUm{
+  background-image: url(/assets/img/investverso-noticias.img/wolf-g.png);
+}
+
+.noticia__capa--secDois{
+  background-image: url(/assets/img/investverso-noticias.img/Ações-money-forbes.png); 
+   
+}
+
+.destaque__texto {
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.63) 0%, transparent 100%);
+  color: var(--cor-branca);
+  font: 700 1rem 'DM Sans', sans-serif;
+  padding: .85rem;
+  width: 100%;
+}
+
+.noticia__fonte {
+  font-size: .75em;
+  margin-top: 0.5em;
+}
+
+.categoria__noticias {
+  width: 100%;
+}
+
+.link__categoria {
+  display: block;
   font: 700 1rem "DM Sans", sans-serif;
+  color: var(--cor-verde-escuro);
+  text-align: right;
+  margin: 3rem 0;
+}
+
+.link__categoria > i {
+  color: var(--cor-roxa);
+  margin-left: .5rem;
+}
+
+.noticias__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.noticia__card{
+  background-color: var(--cor-branca);
+  box-shadow: 0px 3.3361px 3.3361px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: 24.75rem;
+}
+
+.card__capa{
+  height: 185px;
+  border-radius: 20px 20px 0 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+}
+
+.card__capa--um {
+  background-image: url(/assets/img/investverso-noticias.img/demonstrativos.png);
+}
+
+.card__capa--dois {
+  background-image: url(/assets/img/investverso-noticias.img/valor.png);
+}
+
+.card__capa--tres {
+  background-image: url(/assets/img/investverso-noticias.img/bolsa-valores.png);
+}
+
+.card__capa--quatro {
+  background-image: url(/assets/img/investverso-noticias.img/cedula.png);
+}
+
+.card__capa--cinco {
+  background-image: url(/assets/img/investverso-noticias.img/commodities.png);
+}
+
+.card__capa--seis {
+  background-image: url(/assets/img/investverso-noticias.img/bolsa-valores.png);
+}
+
+.card__titulo {
+  text-align: center;
+  font: 700 1.125rem Poppins, sans-serif;
+  color: var(--cor-branca);
+  background-color: rgba(49, 49, 49, 0.6);
+  border-radius: 2em;
+}
+
+.card__corpo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 13rem;
+}
+
+.card__chamada {
+  font: 700 1.375rem "DM Sans", sans-serif;
+  color: var(--cor-cinza);
+  line-height: 1.375rem;
+}
+
+.card__fonte {
+  font: 400 1.125rem "DM Sans", sans-serif;
+  color: var(--cor-cinza);
+  margin-top: .625em;
+}
+
+.card_-data{
+  font: 400 .8125rem "DM Sans", sans-serif;
   color: var(--cor-cinza);
 }
 
-.descricao__noticia {
-  font: 400 0.75rem "DM Sans", sans-serif;
-  color: var(--cor-cinza);
-  
-} 
-
-.link__noticia {
-  text-decoration: none;
+.educFinanceira > .container {
+  padding-bottom: 4rem;
 }
-  
-.descricao_noticias--todos{
-  /* width: 171px; */
-  height: 24px;
-  left: 463px;
-  top: 344px;
-
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 33px;
-  color: #313131;
-}
-
-.titulo--invest__noticias {
-  margin-left: 0.3rem;
-  font: 700 1.125rem "DM Sans", sans-serif;
-  color: #000000
-}
-
-.nome_da_noticia {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 22px;
-  color: #313131;
-  /* width: 777px; */
-  left: 463px;
-
-}
-  
-.nome_da_noticia--todos{
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 24px;
-  color: #313131;
-}
-
 
 @media screen and (min-width:963px){
-  .noticias {
-    margin-bottom: 3rem;
+  .categoria__noticias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 0;
   }
 
-  .capa__noticias--todos{
-    width: 18rem;
-    height: 10rem;
+  .noticias__wrapp {
+    padding-top: 0;
+    display: grid;
+    gap: .5rem;
+    grid-template-areas: 
+      "principal secUm"
+      "principal secDois";
+    grid-template-columns: 65% auto;
+    grid-template-rows: 50% auto;
+    align-content: flex-start;
   }
 
-  .titulo__noticia {
-    font-size: 1.5rem;
-    
+  .noticia__destaque {
+    overflow: hidden;
+  }
+
+  .noticia__destaque:hover .noticia__capa  {
+    transform: scale(1.04);
+  }
+
+  .noticia__destaque--principal {
+    grid-area: principal;   
+  }
+
+  .noticia__destaque--sec-um {
+    grid-area: secUm;     
   }
   
-  .descricao__noticia {
-    font-size: 1.125rem;
-  } 
-    
+  .noticia__destaque--sec-dois {
+    grid-area: secDois;  
+  }
+  
+  .noticia__capa {
+    height: 100%;
+  }
+
+  .noticia__capa--principal{
+    height: 24.5rem;
+  }
+  
+  .destaque__texto {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+  
+  .destaque__texto--pequeno {
+    font-size: 0.8rem;
+  }
+  
+  .link__categoria {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .noticias__cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+   
+  .noticia__card{
+    width: 30%;
+  }
 }
    
