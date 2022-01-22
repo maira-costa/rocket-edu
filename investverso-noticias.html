@@ -43,238 +43,179 @@
     <section class="banner_invest">
       <div>
         <h1 class="texto_banner">InvestVERSO</h1>
-        <h2 class="texto_banner--menor">Notícias</h2>
+        <p class="texto_banner--menor">Notícias</p>
       </div>
     </section>
-    <!-- notícias inicio -->
-    <section class="secao secao--populares">
-      <div class="container container--invest">
-        <div class="form-wrapper">
-          <div class="menu__form">
-            <form class="form__busca" action="#">
-              <input type="search" class="input-search" placeholder="Buscar noticia..." required>
-              <button type="submit" class="fas fa-search"></button>
-            </form>
+
+    <!-- notícias em destaque -->
+    <section class="noticias__destaque">
+
+      <!-- (TAPE DE COTAÇÕES) TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <!-- <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Tape de Cotações</span></a> por TradingView</div> -->
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+          "symbols": [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P 500"
+            },
+            {
+              "proName": "FOREXCOM:NSXUSD",
+              "title": "US 100"
+            },
+            {
+              "proName": "FX_IDC:EURUSD",
+              "title": "EUR/USD"
+            },
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "Bitcoin"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "Ethereum"
+            }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "ligth",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "br"
+        }
+        </script>
+      </div>
+    <!-- (TAPE DE COTAÇÕES) TradingView Widget END -->
+      <div class="container">
+        <div class="categoria__noticias">
+          <h2 class="titulo titulo--noticias">Mais lidas</h2>
+        </div>
+        <div class="noticias__wrapp">
+          <a href="https://www.tecmundo.com.br/mercado/230086-esperar-mercado-financeiro-2022.htm" target="_blank" class="noticia__destaque noticia__destaque--principal">
+            <div class="noticia__capa noticia__capa--principal">
+              <div class="destaque__texto">
+                <h3 class="noticia__chamada">O que esperar do mercado financeiro em 2022</h3>
+                <p class="noticia__fonte">
+                  Tecmundo
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="https://ocp.news/entretenimento/10-filmes-imperdiveis-sobre-o-mercado-financeiro-e-bolsa-de-valores" target="_blank" class="noticia__destaque noticia__destaque--sec-um">
+            <div class="noticia__capa noticia__capa--secUm">
+              <div class="destaque__texto destaque__texto--pequeno">
+                <h3 class="noticia__chamada">10 filmes imperdiveis sobre o mercado financeiro e bolsa de valores</h3>
+                <p class="noticia__fonte">
+                  OCPNews
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="https://forbes.com.br/forbes-money/2021/05/demonstrativos-financeiros-entenda-como-analisar-os-resultados-trimestrais-das-companhias/" target="_blank" class="noticia__destaque noticia__destaque--sec-dois">
+            <div class="noticia__capa noticia__capa--secDois">
+              <div class="destaque__texto destaque__texto--pequeno">
+                <h3 class="noticia__chamada">Demonstrativos financeiros: como analisar os resultados trimestrais das companhias</h3>
+                <p class="noticia__fonte">
+                  Forbes.com
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="investimentos">
+      <div class="container">
+        <div class="categoria__noticias">
+          <h2 class="titulo titulo--noticias">Investimentos</h2>
+          <a href="#" class="link__categoria">Ver artigos desta categoria<i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+        <div class="noticias__cards">
+          <div class="noticia__card">
+            <div class="card__capa card__capa--um">
+              <h3 class="card__titulo">Demonstrações Financeiras</h3>
+            </div>
+            <div class="card__corpo">
+              <div class="card__texto">
+                <h4 class="card__chamada">Tipos de demonstrações financeiras e sua importância
+                </h4>
+                <p class="card__fonte">totvs.com</p>
+              </div>
+              <p class="card_-data">08 de janeiro de 2022</p>
+            </div>
+          </div>
+          <div class="noticia__card">
+            <div class="card__capa card__capa--dois">
+              <h3 class="card__titulo">Aprenda</h3>
+            </div>
+            <div class="card__corpo">
+              <div class="card__texto">
+                <h4 class="card__chamada">O que são commodities? Veja como funciona e como investir nesse mercado</h4>
+                <p class="card__fonte">Gorila</p>
+              </div>
+              <p class="card_-data">16 de novembro de 2021</p>
+            </div>          
+          </div>
+          <div class="noticia__card">
+            <div class="card__capa card__capa--tres">
+              <h3 class="card__titulo">Bolsa de Valores</h3>
+            </div>
+            <div class="card__corpo">
+              <div class="card__texto">
+                <h4 class="card__chamada">Entenda como funciona o mercado de ações e a bolsa de valores</h4>
+                <p class="card__fonte">InfoMoney</p>
+              </div>
+              <p class="card_-data">12 de janeiro de 2022</p>
+            </div>
+      </div>
+    </section>
+    <section class="educFinanceira">
+      <div class="container">
+        <div class="categoria__noticias">
+          <h2 class="titulo titulo--noticias">Educação Financeira</h2>
+          <a href="#" class="link__categoria">Ver artigos desta categoria <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+        <div class="noticias__cards">
+          <div class="noticia__card">
+            <div class="card__capa card__capa--quatro">
+              <h3 class="card__titulo">Aprenda</h3>
+            </div>
+            <div class="card__corpo">
+              <div class="card__texto">
+                <h4 class="card__chamada">Saiba o que é estagflação e como ela interfere na sua vida</h4>
+                <p class="card__fonte">Yahoo Finanças</p>
+              </div>
+              <p class="card_-data">29 de novembro de 2021</p>
+            </div>
+          </div>
+          <div class="noticia__card">
+            <div class="card__capa card__capa--cinco">
+              <h3 class="card__titulo">Aprenda</h3>
+            </div>
+            <div class="card__corpo">
+              <div class="card__texto">
+                <h4 class="card__chamada">O que são commodities? Veja como funciona e como investir nesse mercado</h4>
+                <p class="card__fonte">Gorila</p>
+              </div>
+              <p class="card_-data">16 de novembro de 2021</p>
+            </div>
+          </div>
+          <div class="noticia__card">
+            <div class="card__capa card__capa--seis">
+              <h3 class="card__titulo">Aprenda</h3>
+            </div>
+            <div class="card__corpo">
+              <div class="card__texto">
+                <h4 class="card__chamada">Entenda como funciona o mercado de ações e a bolsa de valores</h4>
+                <p class="card__fonte">InfoMoney</p>
+              </div>
+              <p class="card_-data">12 de janeiro de 2022</p>
+            </div>
           </div>
         </div>
-        <h1 class="titulo--invest">
-          Notícias para você
-        </h1>
-      </h1>
-      
+      </div>
     </section>
-    <section class="secao">
-      <div class="container container--invest">         
-          
-          <div class="noticias">
-            
-            <h2 class="titulo--invest__noticias">08/01/2022</h2>
-
-            <div id="conteudo-listas">
-              
-              <!--   INVESTIMENTOS   -->
-              <ul class="lista" id="investimentos" data-dropdown>
-
-                <button class="conteudo" data-dropdown-button>Investimentos</button>
-
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png" alt="">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
-                        <h3 class="titulo__noticia">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      </a>
-                      <p class="descricao__noticia">Investing.com Brasil</p>
-                    </div>
-                  </div>
-                </li>
-                  
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Valor Econômico.png" alt="">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://valor.globo.com/financas/coluna/diversificacao-o-unico-almoco-gratis-do-mercado-financeiro.ghtml" target="_blank">
-                        <h3 class="titulo__noticia">Diversificação, o único almoço grátis do mercado financeiro</h3>
-                      </a>
-                      <p class="descricao__noticia">Valor Econômico</p>          
-                    </div>
-                  </div>
-                </li>
-                  
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Tecmundo.png" alt="">
-                    <div class="texto_noticia">                      
-                      <a class="link__noticias" href="https://www.tecmundo.com.br/mercado/230086-esperar-mercado-financeiro-2022.htm" target="_blank">
-                        <h3 class="titulo__noticia">O que esperar do mercado financeiro em 2022</h3>
-                      </a>
-                      <p class="descricao__noticia">Tecmundo</p>          
-                    </div>
-                  </div>
-                </li>
-
-              </ul>
-              
-              <!--   DEMONSTRATIVOS FINANCEIROS   -->
-
-              <ul class="lista" id="demonstrativos" data-dropdown>
-
-                <button class="conteudo" data-dropdown-button>Demonstrativos Financeiros</button>
-
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/demonstrativos 1 1.png" alt="">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://www.totvs.com/blog/gestao-de-servicos/demonstracoes-financeiras/" target="_blank">
-                        <h3 class="titulo__noticia">Tipos de demonstrações financeiras e sua importância</h3>
-                      </a>
-                      <p class="descricao__noticia">totvs.com</p>
-                    </div>
-                  </div>
-                </li>
-                        
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png" alt="">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
-                        <h3 class="titulo__noticia">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      </a>
-                      <p class="descricao__noticia">Investing.com Brasil</p>
-                    </div>
-                  </div>
-                </li>
-                                 
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Ações-money-forbes.png" alt="">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://forbes.com.br/forbes-money/2021/05/demonstrativos-financeiros-entenda-como-analisar-os-resultados-trimestrais-das-companhias/" target="_blank">
-                        <h3 class="titulo__noticia">Demonstrativos financeiros: entenda como analisar os resultados trimestrais das companhias</h3>
-                      </a>
-                      <p class="descricao__noticia">forbes.com</p>
-                    </div>
-                  </div>
-                </li>
-                                 
-              </ul>           
-
-              <!--   CERTIFICAÇÃO DE CONSULTORES   -->
-              <ul class="lista" id="certificacao" data-dropdown>
-
-                <button class="conteudo" data-dropdown-button>Certificação de consultores</button>
-
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png" alt="">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
-                        <h3 class="titulo__noticia">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      </a>
-                      <p class="descricao__noticia">Investing.com Brasil</p>
-                    </div>
-                  </div>
-                </li>
-                              
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/consultoria-certificacao-.png" alt="">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://www.academiccourses.com.br/Certificado/Consultoria/" target="_blank">
-                        <h3 class="titulo__noticia">Melhores Programas de Certificação em Consultoria 2022</h3>
-                      </a>
-                      <p class="descricao__noticia">academiccourses.com</p>
-                    </div>
-                  </div>
-                </li>                  
-
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png" alt="">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
-                        <h3 class="titulo__noticia">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      </a>
-                      <p class="descricao__noticia">Investing.com Brasil</p>
-                    </div>
-                  </div>
-                </li>
-                  
-              </ul>
-                  
-              <!--   BOLSA DE VALORES   -->
-
-              <ul class="lista" id="bolsa" data-dropdown>
-
-                <button class="conteudo" data-dropdown-button>Bolsa de Valores</button>
-
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/bolsa de v 1.png" alt="">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://www.infomoney.com.br/guias/mercado-de-acoes/" target="_blank">
-                        <h3 class="titulo__noticia">Entenda como funciona o mercado de ações e a bolsa de valores</h3>
-                      </a>
-                      <p class="descricao__noticia">infomoney.com.br</p>
-                    </div>
-                  </div>
-                </li>
-                                  
-                <li class="conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
-                        <h3 class="titulo__noticia">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      </a>
-                      <p class="descricao__noticia">Investing.com Brasil</p>
-                    </div>
-                  </div>
-                </li>
-                    
-                <li class="collapse conteudo__itens">
-                  <div class="conteudo__invest--todos">
-                    <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/Investing.png" alt="">
-                    <div class="texto_noticia">
-                      <a class="link__noticias" href="https://br.investing.com/analysis/2022-ano-sem-identidade-no-mercado-financeiro-tupiniquim-200446775" target="_blank">
-                        <h3 class="titulo__noticia">2021: Ano Sem Identidade no Mercado Financeiro Tupiniquim</h3>
-                      </a>
-                      <p class="descricao__noticia">Investing.com Brasil</p>
-                    </div>
-                  </div>
-                </li>
-
-              </ul>
-                  
-                  
-
-              <div class="container noticias__"></div>
-                <h2 class="titulo--invest__noticias">07/01/2022</h2>
-              
-              <!--   CONSULTORIA   -->
-
-              <ul class="lista" id="consultoria" data-dropdown>
-                <button class="conteudo" data-dropdown-button>Consultoria</button>
-                <li class="collapse conteudo__itens">
-                    <div class="conteudo__invest--todos">
-                      <img class="capa__noticias--todos" src="assets/img/investverso-noticias.img/certificacao_2 1.png"">
-                      <div class="texto_noticia">
-                        <a class="link__noticias" href="https://www.ohub.com.br/empresas/consultoria-para-certificacao-iso" target="_blank">
-                          <h3 class="titulo__noticia">As 10 melhores empresas de Consultoria para certificação ISO no Brasil</h3>
-                        </a>
-                        <p class="descricao_noticias descricao_noticias--todos"> Consultorias e Afins</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-
-            </div>
-          
-        </section>
-      </div>  
-    </section>    
-<!-- noticias END -->
       
   </main>
 

@@ -4,5 +4,5 @@
 let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 
 let logado = document.querySelector('#usuarioLogado')
-logado.innerHTML = `${userLogado.nome}`
+logado.innerHTML = `${userLogado.user}`
 
