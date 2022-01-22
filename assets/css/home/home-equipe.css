@@ -1,7 +1,7 @@
-/* .secao--equipe {
-    background-color: var(--cor-branca);
-} */
 
+.secao--equipe {
+    background-color: #e0e0e0;
+}
 .container--equipe {
     padding: 2rem 0;
 }
